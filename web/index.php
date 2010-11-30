@@ -49,7 +49,7 @@
 <div id="collaguae">
 <?php print $photocollague; ?>
 <div id="like">
-<script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script>
+<script src="http://connect.facebook.net/en_US/all.js#xfbml=1" type="text/javascript"></script>
 <fb:like href="http://www.kalak.org/" layout="button_count" font="segoe ui" colorscheme="dark"></fb:like>
 </div>
 <div class="clear"></div>
