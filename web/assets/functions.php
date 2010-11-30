@@ -4,8 +4,40 @@ require_once("phpflickr/phpFlickr.php");
 // Create phpFlickr object
 $f = new phpFlickr("7013b7ebe9525e7f63fcb8dd86a82969");
 
-// Cache the stuff
-$f->enableCache('db', 'mysql://root:jwfrqf@localhost/kalakorg', 1200, 'flickr_test_cache');
+// Initialize db array
+$db = array('host'  => NULL, 'db'    => NULL, 'user'  => NULL, 'psw'   => NULL);
+$cache = TRUE;
+  
+switch($_SERVER['HTTP_HOST']) {
+  case 'dev.kalak': // My local dev
+    $db['host'] = 'localhost';
+    $db['db']   = 'kalakorg';
+    $db['user'] = 'root';
+    $db['psw']  = 'jwfrqf';
+    break;
+  case 'kalak.org': // My prod environment
+    $db['host'] = 'mysql13.nebula.fi';
+    $db['db']   = 'kalakorg';
+    $db['user'] = 'kalakorg';
+    $db['psw']  = 'xxx';
+    break;
+  default:
+    $cache = FALSE;
+    break;
+}
+
+// Test db if it is cool to cache
+$dblink = mysql_connect($db['host'], $db['user'], $db['psw']); 
+if (!$dblink) {
+    $cache = FALSE;
+}
+mysql_close($dblink);
+
+
+// If db ok, cache the stuff
+if($cache) {
+  $f->enableCache('db', 'mysql://'.$db['user'].':'.$db['psw'].'@'.$db['host'].'/'.$db['db'], 1200, 'flickr_test_cache');
+}
 
 // This is my Flickr NSID
 $nsid = '29955877@N04';
