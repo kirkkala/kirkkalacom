@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 require_once("phpflickr/phpFlickr.php");
 
 // Create phpFlickr object
