@@ -9,7 +9,7 @@ require_once('assets/functions.php');
 <meta name="keywords" content="Timo Kirkkala, valokuvaaja, valokuvia, photos, photoblog, flickr" />
 <meta name="description" content="Photos by mr Timo Kirkkala - the flickr API experiment." />
 <meta name="copyright" content="Timo Kirkkala" />
-<title><?php if($photoset_info['title']) { print $photoset_info['title'] .' | ';} ?>Timo Kirkkala | Kalak.org</title>
+<title><?php if($photoset_info['title']) { print $photoset_info['title'] .' | ';}else{ print 'The Flickr experiment | '; } ?>Timo Kirkkala | Kalak.org</title>
 <link rel="stylesheet" href="/assets/css/style.css" type="text/css" />
 <link rel="stylesheet" href="/assets/css/jquery.fancybox-1.3.2.css" type="text/css" />
 <script type="text/javascript" src="/assets/js/jquery-1.4.4.min.js"></script>
