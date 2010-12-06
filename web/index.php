@@ -6,18 +6,36 @@
 <meta name="keywords" content="Timo Kirkkala, valokuvaaja, valokuvia, photos, photoblog, flickr" />
 <meta name="description" content="Photos by mr Timo Kirkkala - the flickr API experiment." />
 <meta name="copyright" content="Timo Kirkkala" />
-<title>Timo Kirkkala | Kalak.org</title>
+<title><?php if($photoset_info['title']) { print $photoset_info['title'] .' | ';} ?>Timo Kirkkala | Kalak.org</title>
 <link rel="stylesheet" href="/assets/css/style.css" type="text/css" />
 <link rel="stylesheet" href="/assets/css/jquery.fancybox-1.3.2.css" type="text/css" />
-
+<script type="text/javascript" src="/assets/js/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="/assets/js/jquery.easing-1.3.pack.js"></script>
+<script type="text/javascript" src="/assets/js/jquery.fancybox-1.3.2.pack.js"></script>
+<script type="text/javascript" src="/assets/js/jquery.simpledropdown.js"></script>
+<script type="text/javascript" src="/assets/js/script.js"></script>
 </head>
 
 <body class="nojs">
 
 <div id="wrapper">
+<?php if(!$cache): ?>
+<div class="error">
+<p>Oh noes - smth wrong with caching.<br />Photos might load slowly :(</p>
+</div>
+<?php endif; ?>
 <div id="header">
-
-<?php /*
+<div id="info">
+<div id="photoset_img"><?php print $set_img; ?></div>
+<div id="photoset_desc">
+<h2><?php print $set_title; ?></h2>
+<p><?php print $set_desc; ?></p>
+</div>
+</div><!-- /info -->
+<div class="clear"></div>
+</div><!-- /header -->
+<div id="content">
+<div id="collaguae">
 <div id="select_form">
 	<ul>
 		<li>Select photoset</li>
@@ -29,39 +47,20 @@
 		</li>
 	</ul>
 </div>
-*/ ?>
-
-<div id="info">
-<?php /* <div id="photoset_img"><a href="<?php print $photoset_url; ?>"><img src="<?php print $primary_photo_url; ?>" alt="" /></a></div> */ ?>
-<div id="photoset_img"><a href="http://www.flickr.com/photos/kalak"><img src="http://farm4.static.flickr.com/3093/buddyicons/29955877@N04.jpg" alt="Kalak" /></a></div>
-<div id="photoset_desc">
-<h2>Hi there</h2>
-<p>Enjoy the latest photos from my <a href="http://www.flickr.com/photos/kalak">flickr</a> photostream.</p>
-<?php /*
-<h2><a href="<?php print $photoset_url; ?>"><?php print $photoset_info['title']; ?></a></h2>
-<p><?php print $photoset_info['description']; ?></p>
-*/ ?>
-</div>
-</div>
-<div class="clear"></div>
-</div><!-- /header -->
-<div id="content">
-<div id="collaguae">
 <?php print $photocollague; ?>
+<div id="copy">
+<p>&copy; Timo Kirkkala 2010</p>
+</div><!-- /copy -->
 <div id="like">
 <script src="http://connect.facebook.net/en_US/all.js#xfbml=1" type="text/javascript"></script>
 <fb:like href="http://www.kalak.org/" layout="button_count" font="segoe ui" colorscheme="dark"></fb:like>
-</div>
+</div><!-- /like -->
 <div class="clear"></div>
+
 </div><!-- /collaguae -->
+
 </div><!-- /content -->
 </div><!-- /wrapper -->
 
- 
-<script type="text/javascript" src="http://cdn.jquerytools.org/1.2.5/full/jquery.tools.min.js"></script>
-<script type="text/javascript" src="/assets/js/jquery.easing-1.3.pack.js"></script>
-<script type="text/javascript" src="/assets/js/jquery.fancybox-1.3.2.pack.js"></script>
-<script type="text/javascript" src="/assets/js/script.js"></script>  
-<?php /* <script type="text/javascript" src="/assets/js/jquery.simpledropdown.js"></script> */ ?>
 </body>
 </html>

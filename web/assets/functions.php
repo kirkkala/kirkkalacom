@@ -7,7 +7,7 @@ $f = new phpFlickr("7013b7ebe9525e7f63fcb8dd86a82969");
 // Initialize db array
 $db = array('host'  => NULL, 'db'    => NULL, 'user'  => NULL, 'psw'   => NULL);
 $cache = TRUE;
-  
+print $_SERVER['HTTP_HOST'];
 switch($_SERVER['HTTP_HOST']) {
   case 'dev.kalak': // My local dev
     $db['host'] = 'localhost';
@@ -48,19 +48,6 @@ $photoset_id = $_GET['photoset'];
     // Get the friendly URL of the user's photos
     $photos_url = $f->urls_getUserPhotos($nsid);
 
-/*
-    // Get photoset ID and build select list
-    $photosets = $f->photosets_getList($nsid);
-    foreach($photosets['photoset'] as $photoset) {
-      if($photoset['id'] == $_GET['photoset'] || $photoset['id'] == 'latest') {
-        $selected =  ' selected="selected"';
-      }
-      $options .= '<option value="'.$photoset['id'].'"'.$selected.'>' . htmlspecialchars($photoset['title']) . '</option>';
-      $selected = '';
-    }
-    $photoset_select .= '<option value="latest"> - Latest photos - </option>' . $options;
-*/
-
     $photosets = $f->photosets_getList($nsid);
     foreach($photosets['photoset'] as $photoset) {
       if($photoset['id'] == $_GET['photoset'] || $photoset['id'] == 'latest') {
@@ -70,8 +57,6 @@ $photoset_id = $_GET['photoset'];
       $selected = '';
     }
     
-//    $photoset_select .= '<li><a href="#">Argentina</a></li>';
-
     // Get the user's public photos
     $my_photos = $f->people_getPublicPhotos($nsid, NULL, NULL, 60);
     
@@ -82,10 +67,12 @@ $photoset_id = $_GET['photoset'];
     //print_r($my_photos);
     
     if(!$_GET['photoset'] || $_GET['photoset'] == 'latest') {
+      $display_photoset = FALSE;
       $photoarray = $my_photos['photos']['photo'];
     }
     else {
       $photoarray = array_reverse((array)$photos['photoset']['photo']);
+      $display_photoset = TRUE;
       // Get the photoset primary img url & stuff
 
       $primary_photo = $f->photos_getInfo($photoset_info['primary'], 'url_m');
@@ -100,10 +87,21 @@ $photoset_id = $_GET['photoset'];
         $photourl = $f->buildPhotoURL($photo);
         
 // link to flickrpage       $photocollague .= '<a href="' . $photos_url . $photo[id] . '" style="-webkit-transform: rotate('.rand(-5, 5).'deg)">';
-        $photocollague .= '<a rel="group" href="'.$photourl.'" style="-webkit-transform: rotate('.rand(-5, 5).'deg)">';
-        $photocollague .= '<img alt="' . $phototitle . '" title="' . $phototitle . '" src="' . $f->buildPhotoURL($photo, "Square") . '" />
+        $photocollague .= '<a class="fancy" title="' . $phototitle . '" rel="group" href="'.$photourl.'" style="-webkit-transform: rotate('.rand(-5, 5).'deg)">';
+        $photocollague .= '<img alt="' . $phototitle . '" src="' . $f->buildPhotoURL($photo, "Square") . '" />
 ';
         $photocollague .= '</a>';
     }
-  
+    
+    if($display_photoset) {
+      $set_img = '<a href="'.$photoset_url.'"><img src="'.$primary_photo_url.'" alt="" /></a>';
+      $set_title = '<a href="'.$photoset_url .'" title="Go to Flickr photoset page">'.$photoset_info['title'].'</a>';
+      $set_desc = $photoset_info['description'];
+    }
+    else {
+      $set_img = '<a href="http://www.flickr.com/photos/kalak" title="Go to my Flickr photostream"><img src="http://farm4.static.flickr.com/3093/buddyicons/29955877@N04.jpg" alt="Kalak" /></a>';
+      $set_title = 'Hi there!';
+      $set_desc = 'Enjojy my latest photos from <a href="http://www.flickr.com/photos/kalak">flickr</a> below or choose a photoset from right.';
+    }
+
 ?>

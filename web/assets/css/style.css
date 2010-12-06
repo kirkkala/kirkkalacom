@@ -1,21 +1,5 @@
 ﻿/* Gee! Reset all! */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, font, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	outline: 0;
-	font-size: 100%;
-	vertical-align: baseline;
-	background: transparent;
-}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent; }
 body {	line-height: 1; }
 ol, ul { list-style: none; }
 :focus { outline: 0; -moz-outline-style:none; }
@@ -23,15 +7,15 @@ ol, ul { list-style: none; }
 html { height: 101%; }
 
 body {
-  font: 100% Arial ,sans-serif;
-  background: #1a1a1a; /*url('../img/loading.gif') no-repeat center 220px; */
+  background: #1a1a1a;
   color: #ddd;
+  font: 100% Arial, sans-serif;
   padding: 30px 80px;
 }
 
-h1, h2, p {
-  text-shadow: #111 1px 1px 1px;
-}
+body.js { background: #1a1a1a url('../img/loading.gif') no-repeat center 200px; }
+
+h1, h2, p { text-shadow: #111 1px 1px 1px;}
 
 h2 {
   font-size: 18px;
@@ -39,20 +23,29 @@ h2 {
   margin: 0 0 5px 0;
 }
 
-p {
-  font-size: 12px;
-}
+p { font-size: 12px; }
 
 a { color: #fff; text-decoration: none; }
 a:hover { color: #f0f; }
 a:active { outline:none; }
 
+.error {
+  text-align: center;
+  border: 1px solid;
+  padding: 10px;
+  color: #ba1816;
+  background: #feeeee;
+}
 
 #header {
   position: relative;
   margin: 0 auto;
-  padding: 20px;
+  padding: 20px 20px 20px 30px;
   width: 970px;
+}
+
+#content {
+  position: relative;
 }
 
 #photoset_img,
@@ -64,18 +57,15 @@ a:active { outline:none; }
 }
 #photoset_desc {
   margin: 0 0 0 20px;
+  width: 600px;
 }
 
 #select_form {
   position: absolute;
-  top: 20px;
-  right: 20px;
-}
-
-#like {
-  position: absolute;
-  bottom: -40px;
-  right: -30px
+  top: -50px;
+  right: 30px;
+  width: 150px;
+  z-index: 10;
 }
 
 #collaguae {
@@ -90,7 +80,7 @@ a:active { outline:none; }
 }
 .clear { clear: both; }
 
-#collaguae a {
+#collaguae a.fancy {
   float: left;
   padding: 5px;
 }
@@ -116,23 +106,43 @@ a:active { outline:none; }
   -webkit-box-shadow: 2px 2px 40px rgba(255, 255, 255, 0.3);
 }
 
-
-
-.tooltip {
-	display:none;
-	background: transparent url(../img/black_arrow.png);
-	font-size:11px;
-	height:35px;
-	width:160px;
-	padding: 20px 20px 25px 20px;
-	color:#fff;	
+#fancybox-title-over span {
+  font-size: 0.8em;
+  color: #666;
+  position: absolute;
+  top: 0;
+  left: 20px;
 }
 
+#copy, #like {
+  position: absolute;
+}
+
+#copy { 
+  bottom: -55px;
+  left: 10px;
+  padding: 20px;
+  opacity: 0.6;
+  width: 90% 
+}
+
+#copy p {
+font-size: 9px;
+}
+
+#copy:hover { opacity: 1; }
+#copy a { padding: 0; float: none; }
+#copy a:hover {color: #fff; }
+
+#like { 
+  bottom: -40px;
+  right: -30px 
+}
 
 /* Dropdown list styling */
 .dropdown {
   font-size: 12px;
-  position: relative;
+  position: absolute;
   z-index: 10;
   background:url(../img/arrow.png) no-repeat 132px 14px #000;
   color:#fff;
@@ -143,12 +153,17 @@ a:active { outline:none; }
   cursor: pointer;
   margin: 0; 
   padding: 0;
-  -moz-box-shadow: 2px 2px 40px rgba(255, 255, 255, 0.2);
-  -webkit-box-shadow: 2px 2px 40px rgba(255, 255, 255, 0.2);
+  -moz-box-shadow: 2px 2px 40px rgba(255, 255, 255, 0.1);
+  -webkit-box-shadow: 2px 2px 40px rgba(255, 255, 255, 0.1);
 }
 
+.dropdown:hover {
+  background-position: 132px -66px;
+  color: #f0f;
+}
 
 .dropdown a {
+  float: none;
   text-decoration: none;
   color: #fff;
   display: block;
@@ -189,18 +204,27 @@ a:active { outline:none; }
 
 .selected { 
   padding: 8px;
-  color:#f0f;
 }
 
-.drop ul li:hover {
-  text-decoration: underline;
+li ul a.selected {
+  color: #f0f;
 }
 
+#select_form a:hover,
+#select_form li:hover {
+  color: #f0f;
+}
 
-/* Styles without js */
-.nojs #select_form ul { width: 200px;}
+/* Styles, no js */
+.nojs #select_form { top: -100px; }
+.nojs #select_form ul { width: 275px;}
 .nojs #select_form ul li {
-  float: left;
+  font-weight: bold;
+  font-size: 12px;
+}
+.nojs #select_form ul li ul li {
+  float: right;
+  font-weight: normal;
   font-size: 11px;
   padding: 0 5px 0 0;
 }
