@@ -69,6 +69,7 @@ $photoset_id = $_GET['photoset'];
     if(!$_GET['photoset'] || $_GET['photoset'] == 'latest') {
       $display_photoset = FALSE;
       $photoarray = $my_photos['photos']['photo'];
+      $welcome = 'Welcome to ';
     }
     else {
       $photoarray = array_reverse((array)$photos['photoset']['photo']);
@@ -78,6 +79,8 @@ $photoset_id = $_GET['photoset'];
       $primary_photo = $f->photos_getInfo($photoset_info['primary'], 'url_m');
       $primary_photo_url = 'http://farm'.$primary_photo['farm'].'.static.flickr.com/'.$primary_photo['server'].'/'.$primary_photo['id'].'_'.$primary_photo['secret'].'_s.jpg';
       $photoset_url = $photos_url . 'sets/' . $photoset_info['id'];
+      
+      $welcome = 'This is ';
     }
     
     
