@@ -16,7 +16,6 @@ switch($_SERVER['HTTP_HOST']) {
     $db['psw']  = 'jwfrqf';
     break;
   case 'kalak.org' || 'www.kalak.org': // Nebula
-  print 'foo';
     $db['host'] = 'mysql14.nebula.fi';
     $db['db']   = 'kalakorg';
     $db['user'] = 'kalakorg';
