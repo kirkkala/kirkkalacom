@@ -4,3 +4,7 @@ ErrorDocument 404 /404.php
   order allow,deny
   deny from all
 </Files>
+
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www.kalak.org$ [NC]
+RewriteRule ^(.*)$ http://kalak.org/$1 [R=301,L]
