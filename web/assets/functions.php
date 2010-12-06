@@ -1,4 +1,8 @@
 ﻿<?php
+if (!defined("AUTH")) {  
+  die('Tryin to haxx? GTFO!'); 
+}  
+
 require_once("phpflickr/phpFlickr.php");
 
 // Create phpFlickr object
