@@ -1,0 +1,141 @@
+body {
+font: 62.5% Arial, sans-serif;
+margin: 0;
+padding: 0;
+margin: 0;
+color: #333;
+}
+
+/* The full page scaled bg */
+div#bg img {
+min-height: 100%;
+min-width: 900px;
+width: 100%;
+height: auto;
+position: fixed;
+top: 0;
+left: 0;
+}
+
+@media screen and (max-width: 900px) {
+div#bg img{
+left: 50%;
+margin-left: -450px; }
+}
+
+
+
+a {
+color: #df0ddf;
+text-decoration: none;
+outline: none;
+}
+
+a:hover {
+background: #df0ddf;
+color: #fff;
+}
+
+img {
+border: none;
+}
+
+a.x {
+float: right;
+width: 16px;
+height: 16px;
+background: url('close.gif') no-repeat 0 0;
+text-indent: -9999px;
+}
+
+a.x:hover {
+background-position: 0 -24px;
+}
+
+h1 {
+font-size: 2.2em;
+margin: 1em 0;
+padding: 0;
+text-shadow: 0.1em 0.1em 0.2em #bbb;
+text-transform: uppercase;
+}
+
+h2 {
+font-size: 1.1em;
+color: #df0ddf;
+text-shadow: 0.1em 0.1em 0.1em #bbb;
+text-transform: uppercase;
+margin: 2.2em 0 -0.5em 0;
+}
+
+p {
+margin: 1em 0 0 0;
+padding: 0;
+text-shadow: 0.01em 0.01em 0.1em #bbb;
+font-variant: small-caps;
+font-size: 1.1em;
+font-weight: bold:
+}
+
+div#content p {
+width: 22em;
+margin: 1em auto;
+}
+
+/* Brong the content on top of BG */
+div#content,
+div#back a {
+position: relative; 
+
+text-align: center;
+background: rgb(255, 255, 255);
+background: rgba(255, 255, 255, 0.9);
+-moz-box-shadow: #333 0.4em 0.4em 1em;
+-webkit-box-shadow: #333 0.4em 0.4em 1em;
+}
+
+div#content {
+width: 30em;
+margin: 10% auto 0 auto;
+padding: 1em 1.2em 3em 1.2em;
+font-size: 1.2em;
+-moz-border-radius: 0.7em;
+-webkit-border-radius: 0.7em;
+}
+
+
+div#back a {
+float: right;
+width: 2.5em;
+height: 2.5em;
+background: #fff url('info.gif') no-repeat 4px 4px;
+text-indent: -9999px;
+line-height: 2.4em;
+margin: 2em;
+-moz-border-radius: 0.5em;
+-webkit-border-radius: 0.5em;
+}
+
+div#back a:hover {
+background-position: 4px -20px;
+}
+
+
+div#content p#copy {
+font-style: italic;
+font-size: 0.9em;
+color: #888;
+margin-top: 4em;
+font-variant: normal;
+}
+
+#poor-ie-user {
+text-align: center;
+font-size: 2em;
+margin: 0 0 5em 0;
+}
+
+#poor-ie-user #tips {
+font-size: 0.5em;
+font-style: italic;
+}
