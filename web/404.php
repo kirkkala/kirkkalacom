@@ -12,7 +12,7 @@
 <script type="text/javascript" src="/assets/js/script.js"></script>
 
 </head>
-<body class="nojs">
+<body class="nojs not-found">
 <div id="wrapper">
 <div id="header">
 <h1><a href="/"><span>This is </span> kalak.org <span> - the internetplayground of mr. Timo Kirkkala</span></a></h1>
