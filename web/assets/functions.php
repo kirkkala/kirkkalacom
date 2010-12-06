@@ -15,7 +15,8 @@ switch($_SERVER['HTTP_HOST']) {
     $db['user'] = 'root';
     $db['psw']  = 'jwfrqf';
     break;
-  default: // My prod environment
+  default: // Nebula
+  print 'foo';
     $db['host'] = 'mysql14.nebula.fi';
     $db['db']   = 'kalakorg';
     $db['user'] = 'kalakorg';
@@ -36,7 +37,7 @@ mysql_close($dblink);
 
 // If db ok, cache the stuff
 if($cache) {
-  $f->enableCache('db', 'mysql://'.$db['user'].':'.$db['psw'].'@'.$db['host'].'/'.$db['db'], 1200, 'flickr_test_cache');
+  $f->enableCache('db', 'mysql://'.$db['user'].':'.$db['psw'].'@'.$db['host'].'/'.$db['db'], 1200, 'cache_phpflickr');
 }
 
 // This is my Flickr NSID
