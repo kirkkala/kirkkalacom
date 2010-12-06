@@ -1,5 +1,4 @@
 <?php 
-define("AUTH",1);  
 require_once('assets/functions.php'); 
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
@@ -69,11 +68,11 @@ require_once('assets/functions.php');
 <div id="about"> 
 <h2>What is this about?</h2>
 <p><a href="http://kalak.org">Kalak.org</a> is the internet playground of web developer &amp; photo hobbyist mr. Timo Kirkkala.</p>
-<p>The domain has been around since 2005, first starting as static html pages, then evolving to a Wordpress blog which I later got tired and shut down in autumn 2009.</p>
-<p>The current version was launched 6.12.2010 and is build with a little help of <a href="http://www.flickr.com/services/api/">Flickr API</a> & <a href="http://phpflickr.com/">phpflickr 3.0</a> fetching photos from my Flickr account.</p>
+<p>The domain has been around since 2005, first starting as static html pages, then evolving to a <a href="http://wordpress.com/">Wordpress</a> blog which I later got tired and shut down in autumn 2009.</p>
+<p>The current version was launched 6.12.2010 and is build with a little help of <a href="http://www.flickr.com/services/api/">Flickr API</a> &amp; <a href="http://phpflickr.com/">phpflickr 3.0</a> fetching photos from my Flickr account.</p>
 <p>Most of the stuff I have on Flickr is <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/">Creative Commons licenced</a>, but it is usually nice to ask the copyright holder if you wan't to use the images somewhere else. Thanks.</p>
 <h2>Contact Me?</h2>
-<p>Drop me email to <a href="mailto:timo.kirkkala@gmail.com">timo.kirkkala@gmail.com</a> or find me from <a href="www.facebook.com/timo.kirkkala">Facebook</a> or <a href="http://www.flickr.com/people/kalak/">Flickr</a>.</p>
+<p>Drop me an email to <a href="mailto:timo.kirkkala@gmail.com">timo.kirkkala@gmail.com</a> or find me from <a href="http://www.facebook.com/timo.kirkkala">Facebook</a> or <a href="http://www.flickr.com/people/kalak/">Flickr</a>.</p>
 </div><!-- /about -->
 </div>
 </div><!-- /content -->
