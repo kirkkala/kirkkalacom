@@ -10,20 +10,32 @@ body {
   background: #1a1a1a;
   color: #ddd;
   font: 100% Arial, sans-serif;
-  padding: 30px 80px;
+  padding: 0 80px 30px 80px;
 }
 
 body.js { background: #1a1a1a url('../img/loading.gif') no-repeat center 200px; }
 
-h1, h2, p { text-shadow: #111 1px 1px 1px;}
+h1, h2, p { text-shadow: #666 1px 1px 1px;}
 
-h2 {
-  font-size: 18px;
-  font-weight: normal;
-  margin: 0 0 5px 0;
+h1 a{ 
+  display: block;
+  padding: 0 0 45px 0;
+  font: 18px Calibri, Arial, sans-serif;
+  text-align: center;
 }
 
-p { font-size: 12px; margin: 5px 0 10px 0; }
+h1 a span {
+  font-size: 11px;
+  color: #ddd;
+}
+
+h2 {
+  font: 18px Calibri, Arial, sans-serif;
+  font-weight: normal;
+  margin: 0 0 10px 0;
+}
+
+p { font-size: 11px; margin: 5px 0 10px 0; }
 
 a { color: #fff; text-decoration: none; }
 a:hover { color: #f0f; }
