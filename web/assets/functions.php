@@ -7,7 +7,7 @@ $f = new phpFlickr("7013b7ebe9525e7f63fcb8dd86a82969");
 // Initialize db array
 $db = array('host'  => NULL, 'db'    => NULL, 'user'  => NULL, 'psw'   => NULL);
 $cache = TRUE;
-print $_SERVER['HTTP_HOST'];
+
 switch($_SERVER['HTTP_HOST']) {
   case 'dev.kalak': // My local dev
     $db['host'] = 'localhost';
@@ -15,11 +15,11 @@ switch($_SERVER['HTTP_HOST']) {
     $db['user'] = 'root';
     $db['psw']  = 'jwfrqf';
     break;
-  case 'kalak.org': // My prod environment
-    $db['host'] = 'mysql13.nebula.fi';
+  default: // My prod environment
+    $db['host'] = 'mysql14.nebula.fi';
     $db['db']   = 'kalakorg';
     $db['user'] = 'kalakorg';
-    $db['psw']  = 'xxx';
+    $db['psw']  = 'GogSgxz7';
     break;
   default:
     $cache = FALSE;
