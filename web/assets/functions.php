@@ -15,7 +15,7 @@ switch($_SERVER['HTTP_HOST']) {
     $db['user'] = 'root';
     $db['psw']  = 'jwfrqf';
     break;
-  default: // Nebula
+  case 'kalak.org': // Nebula
   print 'foo';
     $db['host'] = 'mysql14.nebula.fi';
     $db['db']   = 'kalakorg';
