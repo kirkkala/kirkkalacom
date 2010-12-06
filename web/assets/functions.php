@@ -96,8 +96,7 @@ $photoset_id = $_GET['photoset'];
     if($display_photoset) {
       $set_img = '<img src="'.$primary_photo_url.'" alt="" />';
       $set_title = '<a href="'.$photoset_url .'" title="See this photoset on Flickr">'.$photoset_info['title'].'</a>';
-      $set_desc = '<p>'.$photoset_info['description'] .'</p>';
-      $set_url = '<p><a href="'.$photoset_url.'">See this photoset on Flickr</a></p>';
+      $set_desc = '<p>'.$photoset_info['description'] .'<br /><a href="'.$photoset_url.'">See this photoset on Flickr</a></p>';
     }
     else {
       $set_img = '<a href="http://www.flickr.com/photos/kalak" title="Go to my Flickr photostream"><img src="http://farm4.static.flickr.com/3093/buddyicons/29955877@N04.jpg" alt="Kalak" /></a>';

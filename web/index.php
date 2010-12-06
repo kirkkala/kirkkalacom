@@ -31,7 +31,6 @@
 <div id="photoset_desc">
 <h2><?php print $set_title; ?></h2>
 <?php print $set_desc; ?>
-<?php print $set_url; ?>
 </div>
 </div><!-- /info -->
 <div class="clear"></div>

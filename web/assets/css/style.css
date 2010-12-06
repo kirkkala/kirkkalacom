@@ -19,7 +19,7 @@ h1, h2, p { text-shadow: #666 1px 1px 1px;}
 
 h1 a{ 
   display: block;
-  padding: 0 0 45px 0;
+  padding: 0 0 60px 0;
   font: 18px Calibri, Arial, sans-serif;
   text-align: center;
 }
@@ -153,10 +153,10 @@ font-size: 9px;
 
 /* Dropdown list styling */
 .dropdown {
-  font-size: 12px;
+  font-size: 11px;
   position: absolute;
   z-index: 10;
-  background:url(../img/arrow.png) no-repeat 132px 14px #000;
+  background:url(../img/arrow.png) no-repeat 132px 12px #000;
   color:#fff;
   -khtml-border-radius: 5px;
   border-radius: 5px;
@@ -170,7 +170,7 @@ font-size: 9px;
 }
 
 .dropdown:hover {
-  background-position: 132px -66px;
+  background-position: 132px -68px;
   color: #f0f;
 }
 
