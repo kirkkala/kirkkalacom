@@ -29,7 +29,7 @@
 <div id="photoset_img"><?php print $set_img; ?></div>
 <div id="photoset_desc">
 <h2><?php print $set_title; ?></h2>
-<p><?php print $set_desc; ?></p>
+<?php print $set_desc; ?>
 </div>
 </div><!-- /info -->
 <div class="clear"></div>
@@ -61,6 +61,6 @@
 
 </div><!-- /content -->
 </div><!-- /wrapper -->
-
+<?php include_once('assets/analytics.php'); ?>
 </body>
 </html>
