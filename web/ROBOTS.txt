@@ -1,3 +1,5 @@
 User-agent: *
+Disallow: /assets/*
 Disallow: /dev/
 Disallow: /superveikkaus/*
+Disallow: /pma/*
