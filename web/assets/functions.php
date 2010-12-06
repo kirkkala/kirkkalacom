@@ -104,7 +104,7 @@ $photoset_id = $_GET['photoset'];
     else {
       $set_img = '<a href="http://www.flickr.com/photos/kalak" title="Go to my Flickr photostream"><img src="http://farm4.static.flickr.com/3093/buddyicons/29955877@N04.jpg" alt="Kalak" /></a>';
       $set_title = 'Hi there!';
-      $set_desc = '<p>I like to take pictures and I sometimes like to write code. Browse to my photos from Flickr below.</p>';
+      $set_desc = '<p>I like to take pictures and I sometimes like to write code.<br /><a class="textlayer" href="#about" title="About kalak.org">Read more about kalak.org</a>.</p>';
     }
 
 ?>
