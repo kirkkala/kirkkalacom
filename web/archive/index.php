@@ -1,6 +1,6 @@
 <?php 
 
-$base_url = 'http://www.kalak.org';
+$base_url = 'http://www.kalak.org/archive';
 
 /* The box */
 if($_GET['box'] == 'no')
@@ -57,6 +57,7 @@ $image = $imglist[$rndm];
 	<div id="content">
 		<a href="<?php print $base_url; ?>/?box=no" class="x" title="Close">x</a>
 		<h1>Hi there.</h1>
+    <p><em>You are viewing an archived version of <a href="/">kalak.org</a>.</em></p>
 		<p>I got a bit tired with the blog. It is gone for now but I might set up something else later.</p>
 		<p>Meanwhile, go to <a href="http://www.flickr.com/photos/kalak/" title="www.flickr.com/photos/kalak">Flickr</a> to see my photostream. Or click around to see another random picture, there are a few of them.</p>
 		<h2>Looking for something in particular?</h2>
