@@ -13,7 +13,7 @@ body {
   padding: 0 80px 30px 80px;
 }
 
-body.js { background: #1a1a1a url('../img/loading.gif') no-repeat center 180px; }
+body.js { background: #1a1a1a url('../img/loading.gif') no-repeat center 200px; }
 
 h1, h2, p { text-shadow: #666 1px 1px 1px;}
 
