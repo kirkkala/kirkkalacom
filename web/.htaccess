@@ -1,4 +1,6 @@
 ErrorDocument 404 /404.php
 
-
-
+<Files functions.php>
+  order allow,deny
+  deny from all
+</Files>
