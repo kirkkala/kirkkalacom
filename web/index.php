@@ -25,7 +25,7 @@
 </div>
 <?php endif; ?>
 <div id="header">
-<h1><a href="/"><span>This is</span> kalak.org <span> - the internetplayground of mr. Timo Kirkkala</span></a></h1>
+<h1><a href="/"><span><?php print $welcome; ?></span> kalak.org <span> - the internetplayground of mr. Timo Kirkkala</span></a></h1>
 <div id="info">
 <div id="photoset_img"><?php print $set_img; ?></div>
 <div id="photoset_desc">
