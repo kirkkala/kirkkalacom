@@ -18,6 +18,16 @@ $(document).ready(function() {
     $("body").fadeIn("20000");
   }
 
+	$(".textlayer").fancybox({
+    'overlayColor'    : '#000',
+		'overlayOpacity'  : 0.7,
+		'transitionIn'		: 'elastic',
+		'transitionOut'		: 'elastic',
+    'speedIn'         : 300,
+    'speedOut'        : 600,
+    'titlePosition'   : 'outside'
+	});
+  
   $("a[rel=group]").fancybox({
     'overlayColor'    : '#000',
 		'overlayOpacity'  : 0.7,
