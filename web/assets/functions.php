@@ -64,14 +64,16 @@ $photoset_id = $_GET['photoset'];
     $photos = $f->photosets_getPhotos($photoset_id, 'url_m, url_o');
     $photoset_info = $f->photosets_getInfo($photoset_id);
     
+    
     //print_r($my_photos);
+    
+    $welcome = 'Welcome to ';
     
     if(!$_GET['photoset'] || $_GET['photoset'] == 'latest') {
       $display_photoset = FALSE;
       $photoarray = $my_photos['photos']['photo'];
-      $welcome = 'Welcome to ';
     }
-    else {
+    elseif($photoset_info['owner'] == $nsid) {
       $photoarray = array_reverse((array)$photos['photoset']['photo']);
       $display_photoset = TRUE;
       // Get the photoset primary img url & stuff
@@ -81,19 +83,23 @@ $photoset_id = $_GET['photoset'];
       $photoset_url = $photos_url . 'sets/' . $photoset_info['id'];
       
       $welcome = 'This is ';
-    }
-    
+    }    
     
     // Loop through the photos and output the html
-    foreach ($photoarray as $photo) {
-        $phototitle = htmlspecialchars($photo[title]);
-        $photourl = $f->buildPhotoURL($photo);
-        
-// link to flickrpage       $photocollague .= '<a href="' . $photos_url . $photo[id] . '" style="-webkit-transform: rotate('.rand(-5, 5).'deg)">';
-        $photocollague .= '<a class="fancy" title="' . $phototitle . '" rel="group" href="'.$photourl.'" style="-webkit-transform: rotate('.rand(-5, 5).'deg)">';
-        $photocollague .= '<img alt="' . $phototitle . '" src="' . $f->buildPhotoURL($photo, "Square") . '" />
+    if($photoarray) {
+      foreach ($photoarray as $photo) {
+          $phototitle = htmlspecialchars($photo[title]);
+          $photourl = $f->buildPhotoURL($photo);
+          
+  // link to flickrpage       $photocollague .= '<a href="' . $photos_url . $photo[id] . '" style="-webkit-transform: rotate('.rand(-5, 5).'deg)">';
+          $photocollague .= '<a class="fancy" title="' . $phototitle . '" rel="group" href="'.$photourl.'" style="-webkit-transform: rotate('.rand(-5, 5).'deg)">';
+          $photocollague .= '<img alt="' . $phototitle . '" src="' . $f->buildPhotoURL($photo, "Square") . '" />
 ';
-        $photocollague .= '</a>';
+          $photocollague .= '</a>';
+      }
+    }
+    else {
+      $photocollague .= '<div style="text-align: center; width: 100"><h2>Bah. No photos found.<h2><p>The querystring is invalid or maybe you were trying to display someone elses photos?<br />We do not like that.</p><p>Display <a href="/?photoset=latest">the latest pics</a> or select a set from the dropdown.</p></div>';
     }
     
     if($display_photoset) {
