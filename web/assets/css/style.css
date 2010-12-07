@@ -57,6 +57,7 @@ a:active { outline:none; }
   background: #1a1a1a;
 }
 
+
 #header {
   position: relative;
   margin: 0 auto;
@@ -93,6 +94,14 @@ a:active { outline:none; }
   right: 30px;
   width: 150px;
   z-index: 10;
+}
+
+.tjeu {
+  display: inline; 
+  position: absolute; 
+  top: -30px; 
+  left: -75px; 
+  -webkit-transform: rotate(-15deg);
 }
 
 #collaguae {
