@@ -43,8 +43,9 @@ require_once('assets/functions.php');
 <div id="content">
 <div id="collaguae">
 <div id="select_form">
+<p class="tjeu">Check out the photosets too!</p>
 	<ul>
-		<li>Select photoset</li>
+		<li>Select a photoset</li>
 		<li>
 			<ul>
         <li><a href="?photoset=latest">Latest photos</a></li>
