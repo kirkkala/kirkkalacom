@@ -9,6 +9,7 @@ require_once('assets/functions.php');
 <meta name="description" content="Photos by mr Timo Kirkkala - the flickr API experiment." />
 <meta name="copyright" content="Timo Kirkkala" />
 <title><?php if($photoset_info['title']) { print $photoset_info['title'] .' | ';}else{ print 'The Flickr experiment | '; } ?>Timo Kirkkala | Kalak.org</title>
+<link rel="shortcut icon" href="/favicon.ico" />
 <link rel="stylesheet" href="/assets/css/style.css" type="text/css" />
 <link rel="stylesheet" href="/assets/css/jquery.fancybox-1.3.2.css" type="text/css" />
 <script type="text/javascript" src="/assets/js/jquery-1.4.4.min.js"></script>
