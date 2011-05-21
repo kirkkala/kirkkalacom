@@ -30,7 +30,7 @@ require_once('assets/functions.php');
 <div id="header">
 <h1><a href="/"><span><?php print $welcome; ?></span> kalak.org <span> - the internetplayground of mr. Timo Kirkkala</span></a></h1>
 <div id="navi">
-<ul><li><a class="textlayer" href="#about" title="About kalak.org">About</a></li></ul>
+<ul><li><a class="textlayer" href="#about" title="About kalak.org"> What on earth is this website about!? </a></li></ul>
 </div>
 <div id="info">
 <div id="photoset_img"><?php print $set_img; ?></div>
@@ -68,13 +68,16 @@ require_once('assets/functions.php');
 </div><!-- /collaguae -->
 <div style="display: none">
 <div id="about"> 
-<h2>What is this about?</h2>
-<p><a href="http://kalak.org">Kalak.org</a> is the internet playground of web developer &amp; photo hobbyist mr. Timo Kirkkala.</p>
-<p>The domain has been around since 2005, first starting as static html pages, then evolving to a <a href="http://wordpress.com/">Wordpress</a> blog which I later got tired and shut down in autumn 2009.</p>
-<p>The current version was launched 6.12.2010 and is build with a little help of <a href="http://www.flickr.com/services/api/">Flickr API</a> &amp; <a href="http://phpflickr.com/">phpflickr 3.0</a> fetching photos from my Flickr account.</p>
-<p>Most of the stuff I have on Flickr is <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/">Creative Commons licenced</a>, but it is usually nice to ask the copyright holder if you wan't to use the images somewhere else. Thanks.</p>
+<h2>What is this kalak.org?</h2>
+<p>This is about fetching photos from the <a href="http://www.flickr.com/photos/kalak/">Flickr</a> account of photo enthusiast / Web developer mr. Timo Kirkkala.</p>
 <h2>Contact Me?</h2>
-<p>Drop me an email to <a href="mailto:timo.kirkkala@gmail.com">timo.kirkkala@gmail.com</a> or find me from <a href="http://www.facebook.com/timo.kirkkala">Facebook</a> or <a href="http://www.flickr.com/people/kalak/">Flickr</a>.</p>
+<ul>
+<li><a href="mailto:timo.kirkkala@gmail.com">timo.kirkkala@gmail.com</a></li>
+<li><a href="http://www.facebook.com/timo.kirkkala">Facebook</a></li>
+<li><a href="http://www.flickr.com/people/kalak/">Flickr</a></li>
+<li><a href="http://twitter.com/kirkkala">Twitter</a></li>
+<li><a href="http://fi.linkedin.com/in/timokirkkala">Linkedin</a></li>
+</ul>
 </div><!-- /about -->
 </div>
 </div><!-- /content -->
