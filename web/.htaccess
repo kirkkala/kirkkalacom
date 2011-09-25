@@ -10,5 +10,6 @@ RewriteCond %{HTTP_HOST} ^www.kalak.org$ [NC]
 RewriteRule ^(.*)$ http://kalak.org/$1 [R=301,L]
 
 RewriteRule ^kuvat/murmansk-tavastialla-31-7-2009(.*) /kuvat/murmansk/tavastia2009 [R=301,NC,L]
+RewriteRule ^juttuja/snarakoski(.*) /kuvat/vimpeli/2009$1 [R=301,NC,L]
 
 RewriteRule ^koli2011/docs$ https://spreadsheets.google.com/ccc?key=0AsZvFsBzLnrJdHdXNUdIWjhHN3FONDhVTjdrakQwZlE&hl=en&authkey=CJ7WhrIK [R=301,NC,L]
