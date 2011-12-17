@@ -5,15 +5,14 @@ require_once("phpflickr/phpFlickr.php");
 $f = new phpFlickr("7013b7ebe9525e7f63fcb8dd86a82969");
 
 // Initialize db array
-$db = array('host'  => NULL, 'db'    => NULL, 'user'  => NULL, 'psw'   => NULL);
+$db = array();
 $cache = TRUE;
-
 switch($_SERVER['HTTP_HOST']) {
-  case 'dev.kalak': // My local dev
+  case 'local.kalak.org': // My local dev
     $db['host'] = 'localhost';
-    $db['db']   = 'kalakorg';
+    $db['db']   = 'kalak';
     $db['user'] = 'root';
-    $db['psw']  = 'jwfrqf';
+    $db['psw']  = 'root';
     break;
   case 'kalak.org' || 'www.kalak.org': // Nebula
     $db['host'] = 'mysql14.nebula.fi';
@@ -27,8 +26,8 @@ switch($_SERVER['HTTP_HOST']) {
 }
 
 // Test db if it is cool to cache
-$dblink = mysql_connect($db['host'], $db['user'], $db['psw']); 
-if (!$dblink) {
+ 
+if (!$dblink = mysql_connect($db['host'], $db['user'], $db['psw'])) {
     $cache = FALSE;
 }
 mysql_close($dblink);
@@ -36,21 +35,31 @@ mysql_close($dblink);
 
 // If db ok, cache the stuff
 if($cache) {
-  $f->enableCache('db', 'mysql://'.$db['user'].':'.$db['psw'].'@'.$db['host'].'/'.$db['db'], 1200, 'cache_phpflickr');
+	$f->enableCache('db', 'mysqli://'.$db['user'].':'.$db['psw'].'@'.$db['host'].'/'.$db['db'], 0, 'phpflickr_cache');
 }
 
 // This is my Flickr NSID
 $nsid = '29955877@N04';
 
 // Set photoset ID
-$photoset_id = $_GET['photoset'];
-
+$photoset_id = '';
+if (isset($_GET['photoset'])) {
+	$photoset_id = $_GET['photoset'];
+}
+else {
+	$_GET['photoset'] = '';
+}
     // Get the friendly URL of the user's photos
     $photos_url = $f->urls_getUserPhotos($nsid);
 
     $photosets = $f->photosets_getList($nsid);
+    
+    // Initialize some variables
+    $selected = '';
+    $photoset_select = '';
+		
     foreach($photosets['photoset'] as $photoset) {
-      if($photoset['id'] == $_GET['photoset'] || $photoset['id'] == 'latest') {
+      if($photoset['id'] == $photoset_id || $photoset['id'] == 'latest') {
         $selected =  ' class="selected"';
       }
       $photoset_select .= '<li><a href="?photoset='.$photoset['id'].'"'.$selected.'>' . htmlspecialchars($photoset['title']) . '</a></li>';
@@ -79,23 +88,20 @@ $photoset_id = $_GET['photoset'];
       // Get the photoset primary img url & stuff
 
       $primary_photo = $f->photos_getInfo($photoset_info['primary'], 'url_m');
-      $primary_photo_url = 'http://farm'.$primary_photo['farm'].'.static.flickr.com/'.$primary_photo['server'].'/'.$primary_photo['id'].'_'.$primary_photo['secret'].'_s.jpg';
+     	$primary_photo_url = 'http://farm'.$primary_photo['photo']['farm'].'.static.flickr.com/'.$primary_photo['photo']['server'].'/'.$primary_photo['photo']['id'].'_'.$primary_photo['photo']['secret'].'_s.jpg';
+
       $photoset_url = $photos_url . 'sets/' . $photoset_info['id'];
-      
+
       $welcome = 'This is ';
     }    
     
-    // Loop through the photos and output the html
+    // Loop through the photos and output html
     if($photoarray) {
+    	$photocollague = '';
       foreach ($photoarray as $photo) {
-          $phototitle = htmlspecialchars($photo[title]);
-          $photourl = $f->buildPhotoURL($photo);
-          
-  // link to flickrpage       $photocollague .= '<a href="' . $photos_url . $photo[id] . '" style="-webkit-transform: rotate('.rand(-5, 5).'deg)">';
-          $photocollague .= '<a class="fancy" title="' . $phototitle . '" rel="group" href="'.$photourl.'" style="-webkit-transform: rotate('.rand(-5, 5).'deg)">';
-          $photocollague .= '<img alt="' . $phototitle . '" src="' . $f->buildPhotoURL($photo, "Square") . '" />
-';
-          $photocollague .= '</a>';
+          $phototitle = htmlspecialchars($photo['title']);
+          $photocollague .= '<a class="fancy" title="' . $phototitle . '" rel="group" href="'.$f->buildPhotoURL($photo,'medium_640').'" style="-webkit-transform: rotate('.rand(-5, 5).'deg)">';
+          $photocollague .= '<img alt="' . $phototitle . '" src="' . $f->buildPhotoURL($photo, "Square") . '" /></a>';
       }
     }
     else {

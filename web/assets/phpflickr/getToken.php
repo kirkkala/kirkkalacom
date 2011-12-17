@@ -6,8 +6,8 @@
      * token assigned so that you can hard code the token to be used.  To use this
      * use the phpFlickr::setToken() function whenever you create an instance of 
      * the class.
-     */ 
-    
+     */
+
     require_once("phpFlickr.php");
     $f = new phpFlickr("7013b7ebe9525e7f63fcb8dd86a82969", "82f06887c95d3fcd");
     
