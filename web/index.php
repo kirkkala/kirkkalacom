@@ -12,7 +12,7 @@ require_once('assets/functions.php');
   <meta name="keywords" content="Timo Kirkkala, valokuvaaja, valokuvia, photos, photoblog, flickr" />
   <meta name="description" content="Photos by mr Timo Kirkkala - the flickr API experiment." />
   <meta name="copyright" content="Timo Kirkkala" />
-	<meta name="viewport" content="width=1024, initial-scale=1.0">  
+	<meta name="viewport" content="width=1123, initial-scale=1.0"> <!-- oh yes, this is stoopid. I wish I had time to bake this site responsive -->
   
 	<title dir="ltr"><?php if($photoset_info['title']) { print $photoset_info['title'] .' | ';}else{ print 'The Flickr experiment | '; } ?>Timo Kirkkala | Kalak.org</title>
 	
