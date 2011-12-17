@@ -1,24 +1,32 @@
 <?php 
 require_once('assets/functions.php'); 
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fi" lang="fi">
+<!doctype html>
+<!--[if lt IE 7]> <html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7]>    <html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8]>    <html lang="en-us" class="ie8"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en-us"> <!--<![endif]-->
 <head>
-<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1" />
-<meta name="keywords" content="Timo Kirkkala, valokuvaaja, valokuvia, photos, photoblog, flickr" />
-<meta name="description" content="Photos by mr Timo Kirkkala - the flickr API experiment." />
-<meta name="copyright" content="Timo Kirkkala" />
-<title><?php if($photoset_info['title']) { print $photoset_info['title'] .' | ';}else{ print 'The Flickr experiment | '; } ?>Timo Kirkkala | Kalak.org</title>
-<link rel="shortcut icon" href="/favicon.ico" />
-<link rel="stylesheet" href="/assets/css/style.css" type="text/css" />
-<link rel="stylesheet" href="/assets/css/jquery.fancybox-1.3.2.css" type="text/css" />
-<script type="text/javascript" src="/assets/js/jquery-1.4.4.min.js"></script>
-<script type="text/javascript" src="/assets/js/jquery.easing-1.3.pack.js"></script>
-<script type="text/javascript" src="/assets/js/jquery.fancybox-1.3.2.pack.js"></script>
-<script type="text/javascript" src="/assets/js/jquery.simpledropdown.js"></script>
-<script type="text/javascript" src="/assets/js/script.js"></script>
-</head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" >
+  <meta name="keywords" content="Timo Kirkkala, valokuvaaja, valokuvia, photos, photoblog, flickr" />
+  <meta name="description" content="Photos by mr Timo Kirkkala - the flickr API experiment." />
+  <meta name="copyright" content="Timo Kirkkala" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  
+	<title dir="ltr"><?php if($photoset_info['title']) { print $photoset_info['title'] .' | ';}else{ print 'The Flickr experiment | '; } ?>Timo Kirkkala | Kalak.org</title>
+	
+	<link rel="shortcut icon" href="/favicon.ico" />
+	<link rel="stylesheet" href="/assets/css/style.css" type="text/css" />
+	<link rel="stylesheet" href="/assets/css/jquery.fancybox-1.3.2.css" type="text/css" />
+	
+	<script type="text/javascript" src="/assets/js/jquery-1.4.4.min.js"></script>
+	<script type="text/javascript" src="/assets/js/jquery.easing-1.3.pack.js"></script>
+	<script type="text/javascript" src="/assets/js/jquery.fancybox-1.3.2.pack.js"></script>
+	<script type="text/javascript" src="/assets/js/jquery.simpledropdown.js"></script>
+	<script type="text/javascript" src="/assets/js/script.js"></script>
 
+</head>
 <body class="nojs">
 
 <div id="wrapper">
