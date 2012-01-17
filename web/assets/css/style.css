@@ -34,7 +34,7 @@ html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-
 
 body { margin: 0; font-size: 13px; line-height: 1.231; }
 
-body, button, input, select, textarea { font-family: sans-serif; color: #222; }
+body, button, input, select, textarea { font-family: Verdana, Arial, sans-serif; color: #222; }
 
 /* 
  * Remove text-shadow in selection highlight: h5bp.com/i
@@ -208,9 +208,23 @@ td { vertical-align: top; }
 
 
 /* ==|== primary styles =====================================================
-   Author: 
+   Author: Timo Kirkkala | 
    ========================================================================== */
 
+h1 {
+	font: 60px/68px 'PodkovaRegular', Arial, sans-serif;
+	letter-spacing: 0;
+}
+
+p {
+	font-family: 'PodkovaRegular', Arial, sans-serif;
+}
+
+#container {
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+}
 
 
 
