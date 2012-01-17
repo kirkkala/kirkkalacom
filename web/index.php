@@ -1,95 +1,82 @@
-<?php 
-require_once('assets/functions.php'); 
-?>
 <!doctype html>
-<!--[if lt IE 7]> <html lang="en-us" class="ie6"> <![endif]-->
-<!--[if IE 7]>    <html lang="en-us" class="ie7"> <![endif]-->
-<!--[if IE 8]>    <html lang="en-us" class="ie8"> <![endif]-->
-<!--[if gt IE 8]><!--> <html lang="en-us"> <!--<![endif]-->
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!-- Consider adding an manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" >
-  <meta name="keywords" content="Timo Kirkkala, valokuvaaja, valokuvia, photos, photoblog, flickr" />
-  <meta name="description" content="Photos by mr Timo Kirkkala - the flickr API experiment." />
-  <meta name="copyright" content="Timo Kirkkala" />
-	<meta name="viewport" content="width=1123, initial-scale=1.0"> <!-- oh yes, this is stoopid. I wish I had time to bake this site responsive -->
-  
-	<title dir="ltr"><?php if($photoset_info['title']) { print $photoset_info['title'] .' | ';}else{ print 'The Flickr experiment | '; } ?>Timo Kirkkala | Kalak.org</title>
-	
-	<link rel="shortcut icon" href="/favicon.ico" />
-	<link rel="stylesheet" href="/assets/css/style.css" type="text/css" />
-	<link rel="stylesheet" href="/assets/css/jquery.fancybox-1.3.2.css" type="text/css" />
-	
-	<script type="text/javascript" src="/assets/js/jquery-1.4.4.min.js"></script>
-	<script type="text/javascript" src="/assets/js/jquery.easing-1.3.pack.js"></script>
-	<script type="text/javascript" src="/assets/js/jquery.fancybox-1.3.2.pack.js"></script>
-	<script type="text/javascript" src="/assets/js/jquery.simpledropdown.js"></script>
-	<script type="text/javascript" src="/assets/js/script.js"></script>
 
+  <!-- Use the .htaccess and remove these lines to avoid edge case issues.
+       More info: h5bp.com/b/378 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title></title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
+
+  <!-- CSS: implied media=all -->
+  <!-- CSS concatenated and minified via ant build script-->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- end CSS-->
+
+  <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
+
+  <!-- All JavaScript at the bottom, except for Modernizr / Respond.
+       Modernizr enables HTML5 elements & feature detects; Respond is a polyfill for min/max-width CSS3 Media Queries
+       For optimal performance, use a custom Modernizr build: www.modernizr.com/download/ -->
+  <script src="assets/js/libs/modernizr-2.0.6.min.js"></script>
 </head>
-<body class="nojs">
 
-<div id="wrapper">
-<?php if(!$cache): ?>
-<div class="error">
-<p>Oh noes - smth wrong with caching.<br />Photos might load slowly :(</p>
-</div>
-<?php endif; ?>
-<div id="header">
-<h1><a href="/"><span><?php print $welcome; ?></span> kalak.org <span> - the internetplayground of mr. Timo Kirkkala</span></a></h1>
-<div id="navi">
-<ul><li><a class="textlayer" href="#about" title="About kalak.org"> What on earth is this website about!? </a></li></ul>
-</div>
-<div id="info">
-<div id="photoset_img"><?php print $set_img; ?></div>
-<div id="photoset_desc">
-<h2><?php print $set_title; ?></h2>
-<?php print $set_desc; ?>
-</div>
-</div><!-- /info -->
-<div class="clear"></div>
-</div><!-- /header -->
-<div id="content">
-<div id="collaguae">
-<div id="select_form">
-<p class="tjeu">Check out the photosets too!</p>
-	<ul>
-		<li>Select a photoset</li>
-		<li>
-			<ul>
-        <li><a href="?photoset=latest">Latest photos</a></li>
-        <?php print $photoset_select; ?>
- 			</ul>
-		</li>
-	</ul>
-</div>
-<?php print $photocollague; ?>
-<div id="copy">
-<p>&copy; Timo Kirkkala 2010</p>
-</div><!-- /copy -->
-<div id="like">
-<script src="http://connect.facebook.net/en_US/all.js#xfbml=1" type="text/javascript"></script>
-<fb:like href="http://www.kalak.org/" layout="button_count" font="segoe ui" colorscheme="dark"></fb:like>
-</div><!-- /like -->
-<div class="clear"></div>
+<body>
 
-</div><!-- /collaguae -->
-<div style="display: none">
-<div id="about"> 
-<h2>What is this kalak.org?</h2>
-<p>This is about fetching photos from the <a href="http://www.flickr.com/photos/kalak/">Flickr</a> account of photo enthusiast / Web developer mr. Timo Kirkkala.</p>
-<h2>Contact Me?</h2>
-<ul>
-<li><a href="mailto:timo.kirkkala@gmail.com">timo.kirkkala@gmail.com</a></li>
-<li><a href="http://www.facebook.com/timo.kirkkala">Facebook</a></li>
-<li><a href="http://www.flickr.com/people/kalak/">Flickr</a></li>
-<li><a href="http://twitter.com/kirkkala">Twitter</a></li>
-<li><a href="http://fi.linkedin.com/in/timokirkkala">Linkedin</a></li>
-</ul>
-</div><!-- /about -->
-</div>
-</div><!-- /content -->
-</div><!-- /wrapper -->
-<?php include_once('assets/analytics.php'); ?>
+  <div id="container">
+    <header>
+			kalak.org
+    </header>
+    <div id="main" role="main">
+			Site coming soon
+    </div>
+    <footer>
+			&copy; Timo Kirkkala
+    </footer>
+  </div> <!--! end of #container -->
+
+
+  <!-- JavaScript at the bottom for fast page loading -->
+
+  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="assets/js/libs/jquery-1.6.2.min.js"><\/script>')</script>
+
+
+  <!-- scripts concatenated and minified via ant build script-->
+  <script defer src="assets/js/plugins.js"></script>
+  <script defer src="assets/js/script.js"></script>
+  <!-- end scripts-->
+
+	
+  <!-- Change UA-XXXXX-X to be your site's ID -->
+  <script>
+    window._gaq = [['_setAccount','UAXXXXXXXX1'],['_trackPageview'],['_trackPageLoadTime']];
+    Modernizr.load({
+      load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
+    });
+  </script>
+
+
+  <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you want to support IE 6.
+       chromium.org/developers/how-tos/chrome-frame-getting-started -->
+  <!--[if lt IE 7 ]>
+    <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+    <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+  <![endif]-->
+  
 </body>
 </html>
