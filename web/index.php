@@ -23,7 +23,8 @@
 
   <!-- CSS: implied media=all -->
   <!-- CSS concatenated and minified via ant build script-->
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="assets/css/font.css" type="text/css" charset="utf-8">
+  <link rel="stylesheet" href="assets/css/style.css" type="text/css" charset="utf-8">
   <!-- end CSS-->
 
   <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
@@ -38,10 +39,12 @@
 
   <div id="container">
     <header>
-			kalak.org
+			<h1>kalak.org</h1>
     </header>
     <div id="main" role="main">
-			Site coming soon
+			<p>Site coming soon</p>
+			<p>Quis stumptown twee, wayfarers qui officia farm-to-table aute. Austin 3 wolf moon nulla farm-to-table viral, fixie twee iphone brooklyn butcher VHS. Artisan biodiesel quis banh mi. Id DIY before they sold out, dolor magna anim consectetur eiusmod fap photo booth synth. Yr banksy sapiente whatever aliquip, marfa cosby sweater ex et cillum cred dolor. Letterpress wes anderson locavore, synth fap sint carles pitchfork reprehenderit nesciunt aliqua. Culpa fixie master cleanse 3 wolf moon commodo keytar next level.</p>
+			<input type="textfield" />
     </div>
     <footer>
 			&copy; Timo Kirkkala
