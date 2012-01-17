@@ -10,13 +10,20 @@
   <meta name="description" content="Homepage snapshots of kalak.org" />
   <meta name="copyright" content="Timo Kirkkala" />  
 	<title>Archives | Kalak.org</title>
+<style>
+body {
 	
+}</style>
 </head>
 <body class="nojs">
-<h1>This is how kalak.org used to look like in...</h1>
+<h1>This is how kalak.org used to look like around year...</h1>
 <ul>
+<li><strike>2007</strike> <small>(lost in byte heaven)</small></li>
+<li><strike>2008</strike> <small>(lost in byte heaven)</small></li>
+<li><strike>2009</strike> <small>(lost in byte heaven)</small></li>
 <li><a href="2010/">2010</a></li>
-<li><a href="2011/">2010-2012</a></li>
+<li><a href="2011/">2011</a></li>
+<li><a href="/">2012</a> <small>(current)</small></li>
 </ul>
 
 <script type="text/javascript"> 
