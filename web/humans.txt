@@ -8,16 +8,19 @@
   Twitter: twitter.com/kirkkala
   Location: Hellsinki, Finland
 
+
 /* THANKS */
-  Names (& URL): Kati <3
+  My girlfriend: Kati <3
+
 
 /* SITE */
   Standards: HTML5, CSS3
   Components: Modernizr, jQuery
-  Software: Mac, Espresso, Transmit, Photoshop CS5
-  Hardware: Hasselblad, Canon, Holga, Yashica...
+  Software: Mac, Espresso, Transmit, Terminal, Photoshop
+  Pictures taken with: Hasselblad, Canon, Holga, Yashica, pinhole...
 
-/* PICTURE OF A CAMERA */  
+
+/* THIS IS A PICTURE OF A CAMERA */
    _,_____
   |   _ []|
   |  (O)  |

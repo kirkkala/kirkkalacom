@@ -1,14 +1,35 @@
 /*
  * Uuh! Make the typography look cool
- */ 
+ */
+   
+   
+/* =============================================================================
+   The hip seiffy-looking font family
+   ========================================================================== */
 @font-face {
-    font-family: 'PodkovaRegular';
-    src: url('../font/Podkova-Regular-webfont.eot');
-    src: url('../font/Podkova-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../font/Podkova-Regular-webfont.woff') format('woff'),
-         url('../font/Podkova-Regular-webfont.ttf') format('truetype'),
-         url('../font/Podkova-Regular-webfont.svg#PodkovaRegular') format('svg');
+	font-family: 'PodkovaRegular';
+	src: url('../font/Podkova-Regular-webfont.eot');
+	src: url('../font/Podkova-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+		url('../font/Podkova-Regular-webfont.woff') format('woff'),
+		url('../font/Podkova-Regular-webfont.ttf') format('truetype'),
+		url('../font/Podkova-Regular-webfont.svg#PodkovaRegular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+/* =============================================================================
+   Mm, nice.. looks like handwriting. 
+   ========================================================================== */
+@font-face {
+    font-family: 'ArchitectsDaughterRegular';
+    src: url('../font/ArchitectsDaughter-webfont.eot');
+    src: url('../font/ArchitectsDaughter-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/ArchitectsDaughter-webfont.woff') format('woff'),
+         url('../font/ArchitectsDaughter-webfont.ttf') format('truetype'),
+         url('../font/ArchitectsDaughter-webfont.svg#ArchitectsDaughterRegular') format('svg');
     font-weight: normal;
     font-style: normal;
 
 }
+
