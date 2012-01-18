@@ -42,8 +42,16 @@ body, button, input, select, textarea { font-family: Verdana, Arial, sans-serif;
  * Also: hot pink! (or customize the background color to match your design)
  */
 
-::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
-::selection { background: #fe57a1; color: #fff; text-shadow: none; }
+::-moz-selection {
+	color: #fff;
+	text-shadow: none;
+	background-color: #5774fe;
+}
+::selection {
+	color: #fff; 
+	text-shadow: none;
+	background-color: #5774fe;
+}
 
 
 /* =============================================================================
@@ -51,7 +59,6 @@ body, button, input, select, textarea { font-family: Verdana, Arial, sans-serif;
    ========================================================================== */
 
 a { color: #00e; }
-a:visited { color: #551a8b; }
 a:hover { color: #06e; }
 a:focus { outline: thin dotted; }
 
@@ -199,34 +206,47 @@ input:valid, textarea:valid {  }
 input:invalid, textarea:invalid { background-color: #f0dddd; }
 
 
-/* =============================================================================
-   Tables
-   ========================================================================== */
-
-table { border-collapse: collapse; border-spacing: 0; }
-td { vertical-align: top; }
-
 
 /* ==|== primary styles =====================================================
    Author: Timo Kirkkala | 
    ========================================================================== */
 
 h1 {
-	font: 60px/68px 'PodkovaRegular', Arial, sans-serif;
-	letter-spacing: 0;
+	font: 48px/68px 'PodkovaRegular', Arial, sans-serif;
+	margin: 0;
 }
 
-p {
-	font-family: 'PodkovaRegular', Arial, sans-serif;
+h1 small {
+	float: left;
+	font-size: 20px;
+	line-height: 60px;
+	padding: 8px 8px 0 0;
+}
+
+h2 {
+	font: 30px/34px 'PodkovaRegular', Arial, sans-serif;
+	margin: 0;
+}
+
+body {
+	text-shadow: 1px 1px 1px #e1e1f7;	
+}
+
+p, ul, ol, li {
+	font: 20px/20px 'PodkovaRegular', Arial, sans-serif;
 }
 
 #container {
-	width: 800px;
-	margin-left: auto;
-	margin-right: auto;
+	background: #f5f5f5;
+	width: 900px;
+	margin: 30px 0 0 50px;
+	padding: 30px 50px 50px;
 }
 
-
+footer,
+#controls-wrapper {
+	font-family: 'ArchitectsDaughterRegular', Arial, sans-serif;	
+}
 
 
 
