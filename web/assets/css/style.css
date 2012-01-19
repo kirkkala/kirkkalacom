@@ -232,15 +232,73 @@ body {
 	text-shadow: 1px 1px 1px #e1e1f7;	
 }
 
-p, ul, ol, li {
+p, #intro-container li {
 	font: 20px/20px 'PodkovaRegular', Arial, sans-serif;
 }
 
+.no-js #intro-container {
+	display: block;
+}
+
+.load-item {
+	visibility: hidden;
+}
+
 #container {
-	background: #f5f5f5;
-	width: 900px;
-	margin: 30px 0 0 50px;
+
+}
+
+#intro-container {
+	display: none;
+	position: relative;
+	background: #ddd url(../img/bg_intro.jpg) bottom left;
+	color:  #111;
+	width: 70%;
+	margin: 50px auto;
 	padding: 30px 50px 50px;
+	border: 4px solid #fff;
+	-moz-box-shadow: 8px 8px 40px #111111;
+	-webkit-box-shadow: 8px 8px 40px #111111;
+	box-shadow: 8px 8px 40px #111111;
+	-moz-border-radius: 30px;
+	-webkit-border-radius: 30px;
+	border-radius: 30px;
+}
+
+.close, .open {
+	cursor: pointer;	
+}
+
+#intro-container #close-intro {
+	position: absolute;
+	background: transparent url(../img/close.png) no-repeat top left;
+	text-indent: -9999px;
+	top: 15px;
+	right: 15px;
+	width: 43px;
+	height: 43px;
+	opacity: 0.6;
+}
+
+#container #open-intro {
+	display: none;
+}
+
+#container #open-intro {
+	position: absolute;
+	background: transparent url(../img/info.png) no-repeat top left;
+	text-indent: -9999px;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+	width: 43px;
+	height: 43px;
+	opacity: 0.6;
+}
+
+#container #open-intro:hover,
+#intro-container #close-intro:hover { 
+	opacity: 1;
 }
 
 footer,
