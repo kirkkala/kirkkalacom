@@ -1,8 +1,8 @@
-<!doctype html>
-<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<!doctype html public>
+<!--[if lt IE 7]> <html lang="en-us" class="no-js ie6"> <![endif]-->
+<!--[if IE 7]>    <html lang="en-us" class="no-js ie7"> <![endif]-->
+<!--[if IE 8]>    <html lang="en-us" class="no-js ie8"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en-us" class="no-js"> <!--<![endif]-->
 <head>
   <meta charset="utf-8">
 
@@ -33,7 +33,8 @@
     <div id="intro-container">
     	<h1>Hi There! My name is Timo Kirkkala</h1>
 			<p>I am a web developer currently working at <a href="http://www.activeark.com">Activeark</a>. I like to take photos as well. Especially with old analogue cameras.</p>
-			<p><span class="close">Close</span> this box and enjoy my best shots!</p>
+			<p class="js-disabled">Oh crap! You should have JavaScript enabled..</p>
+			<p class="js-enabled"><span class="close">Close</span> this box and enjoy my best shots!</p>
 			<h2>Contact me?</h2>
 			<form id="contact">
 				<label for="email">Your email:</label>
@@ -50,58 +51,39 @@
 				<li><a href="http://fi.linkedin.com/in/timokirkkala">fi.linkedin.com/in/timokirkkala</a></li>
 			</ul>	
 			<div id="close-intro" class="close" title="Click to close">x</div>
-    </div> <!-- end of #intro-container -->
-    
+    </div> <!-- /#intro-container -->
+
     <div id="supersized-container">
-    	<!--Thumbnail Navigation-->
-    	<div id="prevthumb"></div>
-    	<div id="nextthumb"></div>
-    	
-    	<!--Arrow Navigation-->
     	<a id="prevslide" class="load-item"></a>
     	<a id="nextslide" class="load-item"></a>
-    	
     	<div id="thumb-tray" class="load-item">
     		<div id="thumb-back"></div>
     		<div id="thumb-forward"></div>
     	</div>
-    	
-    	<!--Time Bar-->
     	<div id="progress-back" class="load-item">
     		<div id="progress-bar"></div>
     	</div>
-    	
-    	<!--Control Bar-->
     	<div id="controls-wrapper" class="load-item">
     		<div id="controls">
-    			
     			<a id="play-button"><img id="pauseplay" src="assets/supersized/img/pause.png"/></a>
-    		
-    			<!--Slide counter-->
     			<div id="slidecounter">
     				<span class="slidenumber"></span> / <span class="totalslides"></span>
     			</div>
-    			
-    			<!--Slide captions displayed here-->
     			<div id="slidecaption"></div>
-    			
-    			<!--Thumb Tray button-->
     			<a id="tray-button"><img id="tray-arrow" src="assets/supersized/img/button-tray-up.png"/></a>
-    			
-    			<!--Navigation-->
-    			<ul id="slide-list"></ul>
-    
-    		</div> <!-- end of #controls -->
-    	</div> <!-- end of #controls-wrapper -->
-    </div>
-  </div> <!--! end of #container -->
+    			<ul id="slide-list"></ul>    
+    		</div> <!-- /#controls -->
+    	</div> <!-- /#controls-wrapper -->
+    </div> <!-- /#supersized-container -->
+  </div> <!-- /#container -->
 
-<!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+<!-- Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="assets/js/libs/jquery-1.6.2.min.js"><\/script>')</script>
 
-<script type="text/javascript" src="assets/supersized/js/jquery.easing.min.js"></script>
+<script type="text/javascript" src="assets/js/libs/jquery.cookies.2.2.0.min.js"></script>
 
+<script type="text/javascript" src="assets/supersized/js/jquery.easing.min.js"></script>
 <script type="text/javascript" src="assets/supersized/js/supersized.3.2.6.min.js"></script>
 <script type="text/javascript" src="assets/supersized/theme/supersized.shutter.min.js"></script>
 
@@ -111,7 +93,7 @@ jQuery(function($){
 	$.supersized({
 		// Functionality
 		autoplay					:	0,			// Do not autoplay
-		slide_interval		:	10000,	// Length between transitions
+		slide_interval		:	700,	// Length between transitions
 		transition				:	1,			// 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
 		transition_speed	:	1500,		// Speed of transition
 			// Size & Position
