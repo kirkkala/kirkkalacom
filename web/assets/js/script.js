@@ -3,8 +3,8 @@
 */
 $(document).ready(function() {
 
-	function blinkMe(element) {
-		$(element).hide().delay(3000).fadeIn(100).fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100);
+	function blinkMe(element, delay) {
+		$(element).hide().delay(delay).fadeIn(100).fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100);
 	}    
     
 	var time = 400;
@@ -12,7 +12,7 @@ $(document).ready(function() {
 	if($.cookies.get('hasClosedIntro') !== true) {
 		$('#info-container').hide().delay(20).fadeIn(time);
 		$('img').css('opacity', 0.05);
-		blinkMe('#closing-tip');
+		blinkMe('#closing-tip', 3000);
 	}
 	else {
 		$('#container .open').fadeIn(time);
@@ -32,7 +32,7 @@ $(document).ready(function() {
 		$('#container .open').fadeOut(time);
 		$('.load-item').fadeOut(time); 
 		$('img').css('opacity', 0.05);
-		blinkMe('#closing-tip');
+		blinkMe('#closing-tip', 5000);
 	});	
 });
 
