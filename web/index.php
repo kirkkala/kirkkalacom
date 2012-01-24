@@ -29,25 +29,25 @@
 <body>
 
   <div id="container">
-  	<div id="open-intro" class="open" title="Click to open intro">i</div>
-    <div id="intro-container">
-    	<div id="intro-shadow">
+  	<div id="open-info" class="open" title="Click to open info">i</div>
+    <div id="info-container">
+    	<div id="info-shadow">
 	    	<h1>Hi, my name is Timo Kirkkala</h1>
 				<p>I am a web developer working at <a href="http://www.activeark.com">Activeark</a> and I like to take photos with old cameras.</p>
-				<p class="js-disabled">Oh crap! You should have JavaScript enabled..</p>
-				<h2>Contact me?</h2>
-				<p>Any questions? Contact me via email: timo.kirkkala@gmail.com</p>
-				<h2>You can also find me from the Internet:</h2>
+				<p class="js-disabled">Oh crap! How come you don't have JacaScript enabled..?</p>
+				<h2>Contact me</h2>
+				<p>You can contact me via email: timo.kirkkala@gmail.com</p>
+				<h2>Find me from the internet</h2>
 				<ul>
 					<li><a href="http://www.flickr.com/photos/kalak">flickr.com/photos/kalak</a></li>
 					<li><a href="http://www.facebook.com/timo.kirkkala">facebook.com/timo.kirkkala</a></li>
 					<li><a href="http://www.twitter.com/kirkkala">twitter.com/kirkkala</a></li>
 					<li><a href="http://fi.linkedin.com/in/timokirkkala">fi.linkedin.com/in/timokirkkala</a></li>
-				</ul>	
+				</ul>
 				<div id="closing-tip">Close to see my photos</div>
 				<div id="close-intro" class="close" title="Click to close">Close</div>
 			</div> <!-- / #inro-shadow -->
-    </div> <!-- /#intro-container -->
+    </div> <!-- /#info-container -->
 
     <div id="supersized-container">
     	<a id="prevslide" class="load-item"></a>
