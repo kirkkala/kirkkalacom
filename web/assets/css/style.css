@@ -255,26 +255,31 @@ p, #intro-container li {
 #intro-container {
 	display: none;
 	position: relative;
-	background: #ddd url(../img/bg_intro.jpg) bottom left;
-	color:  #111;
+	background: #222 url(../img/bg_grunge.jpg);
+	color:  #222;
 	width: 70%;
 	margin: 50px auto;
-	padding: 30px 50px 50px;
 	border: 4px solid #fff;
+	-moz-border-radius: 30px;
+	-webkit-border-radius: 30px;
 	-moz-box-shadow: 8px 8px 30px #111111;
 	-webkit-box-shadow: 8px 8px 30px #111111;
 	box-shadow: 8px 8px 30px #111111;
-	-moz-border-radius: 30px;
-	-webkit-border-radius: 30px;
+
+}
+
+#intro-container #intro-shadow {
+	padding: 30px 50px 50px;
 	border-radius: 30px;
+	-webkit-box-shadow: inset 0px 0px 180px 40px rgba(00, 0, 0, 1);
+	-moz-box-shadow: inset 0px 0px 180px 40px rgba(00, 0, 0, 1);
+	box-shadow: inset 0px 0px 180px 40px rgba(00, 0, 0, 1);	
 }
 
-.js-enabled,
 .no-js .js-disabled {
-	display: block;
+	display: inline;
 }
 
-.no-js .js-enabled,
 .js-disabled {
 	display: none;
 }
@@ -287,11 +292,23 @@ p, #intro-container li {
 	display: none;
 }
 
-
+#intro-container #closing-tip,
 #intro-container #close-intro {
 	position: absolute;
-	background: transparent url(../img/close.png) no-repeat top left;
 	text-indent: -9999px;
+}
+
+#intro-container #closing-tip {
+	display: none;
+	top: 65px;
+	right: 35px;	
+	width: 98px;
+	height: 27px;
+	background: transparent url(../img/close-arrow.png) no-repeat top left;
+}
+
+#intro-container #close-intro {
+	background: transparent url(../img/close.png) no-repeat top left;
 	top: 15px;
 	right: 15px;
 	width: 43px;
