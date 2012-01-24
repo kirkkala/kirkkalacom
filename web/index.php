@@ -36,7 +36,7 @@
 				<p>I am a web developer working at <a href="http://www.activeark.com">Activeark</a> and I like to take photos with old cameras.</p>
 				<p class="js-disabled">Oh crap! How come you don't have JacaScript enabled..?</p>
 				<h2>Contact me</h2>
-				<p>You can contact me via email: timo.kirkkala@gmail.com</p>
+				<p>You can contact me via email: <a href="timo.kirkkala@gmail.com">timo.kirkkala@gmail.com</a></p>
 				<h2>Find me from the internet</h2>
 				<ul>
 					<li><a href="http://www.flickr.com/photos/kalak">flickr.com/photos/kalak</a></li>
