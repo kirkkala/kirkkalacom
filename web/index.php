@@ -31,26 +31,22 @@
   <div id="container">
   	<div id="open-intro" class="open" title="Click to open intro">i</div>
     <div id="intro-container">
-    	<h1>Hi There! My name is Timo Kirkkala</h1>
-			<p>I am a web developer currently working at <a href="http://www.activeark.com">Activeark</a>. I like to take photos as well. Especially with old analogue cameras.</p>
-			<p class="js-disabled">Oh crap! You should have JavaScript enabled..</p>
-			<p class="js-enabled"><span class="close">Close</span> this box and enjoy my best shots!</p>
-			<h2>Contact me?</h2>
-			<form id="contact">
-				<label for="email">Your email:</label>
-				<input id="email" name="email" type="text" value="" />
-				<label for="message">Your message:</label>
-				<textarea id="message" name="message"></textarea>
-				<button type="submit" value="submit" form="contact">Submit</button>
-			</form>
-			<h2>Me at internet:</h2>
-			<ul>
-				<li><a href="http://www.flickr.com/photos/kalak">flickr.com/photos/kalak</a></li>
-				<li><a href="http://www.facebook.com/timo.kirkkala">facebook.com/timo.kirkkala</a></li>
-				<li><a href="http://www.twitter.com/kirkkala">twitter.com/kirkkala</a></li>
-				<li><a href="http://fi.linkedin.com/in/timokirkkala">fi.linkedin.com/in/timokirkkala</a></li>
-			</ul>	
-			<div id="close-intro" class="close" title="Click to close">x</div>
+    	<div id="intro-shadow">
+	    	<h1>Hi, my name is Timo Kirkkala</h1>
+				<p>I am a web developer working at <a href="http://www.activeark.com">Activeark</a> and I like to take photos with old cameras.</p>
+				<p class="js-disabled">Oh crap! You should have JavaScript enabled..</p>
+				<h2>Contact me?</h2>
+				<p>Any questions? Contact me via email: timo.kirkkala@gmail.com</p>
+				<h2>You can also find me from the Internet:</h2>
+				<ul>
+					<li><a href="http://www.flickr.com/photos/kalak">flickr.com/photos/kalak</a></li>
+					<li><a href="http://www.facebook.com/timo.kirkkala">facebook.com/timo.kirkkala</a></li>
+					<li><a href="http://www.twitter.com/kirkkala">twitter.com/kirkkala</a></li>
+					<li><a href="http://fi.linkedin.com/in/timokirkkala">fi.linkedin.com/in/timokirkkala</a></li>
+				</ul>	
+				<div id="closing-tip">Close to see my photos</div>
+				<div id="close-intro" class="close" title="Click to close">Close</div>
+			</div> <!-- / #inro-shadow -->
     </div> <!-- /#intro-container -->
 
     <div id="supersized-container">
