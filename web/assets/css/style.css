@@ -58,8 +58,8 @@ body, button, input, select, textarea { font-family: Verdana, Arial, sans-serif;
    Links
    ========================================================================== */
 
-a { color: #00e; }
-a:hover { color: #06e; }
+a { color: #234345; text-decoration: none; }
+a:hover { color: #ddd; }
 a:focus { outline: thin dotted; }
 
 /* Improve readability when focused and hovered in all browsers: h5bp.com/h */
@@ -224,23 +224,16 @@ h1 {
 	margin: 0;
 }
 
-h1 small {
-	float: left;
-	font-size: 20px;
-	line-height: 60px;
-	padding: 8px 8px 0 0;
-}
-
 h2 {
 	font: 30px/34px 'PodkovaRegular', Arial, sans-serif;
 	margin: 0;
 }
 
-p, #intro-container li {
-	font: 20px/20px 'PodkovaRegular', Arial, sans-serif;
+p, #info-container li {
+	font: 24px/24px 'PodkovaRegular', Arial, sans-serif;
 }
 
-.no-js #intro-container {
+.no-js #info-container {
 	display: block;
 }
 
@@ -252,14 +245,14 @@ p, #intro-container li {
 
 }
 
-#intro-container {
+#info-container {
 	display: none;
 	position: relative;
 	background: #222 url(../img/bg_grunge.jpg);
 	color:  #222;
 	width: 70%;
 	margin: 50px auto;
-	border: 4px solid #fff;
+	border: 4px solid #6e6e6e;
 	-moz-border-radius: 30px;
 	-webkit-border-radius: 30px;
 	-moz-box-shadow: 8px 8px 30px #111111;
@@ -268,7 +261,7 @@ p, #intro-container li {
 
 }
 
-#intro-container #intro-shadow {
+#info-container #info-shadow {
 	padding: 30px 50px 50px;
 	border-radius: 30px;
 	-webkit-box-shadow: inset 0px 0px 180px 40px rgba(00, 0, 0, 1);
@@ -292,22 +285,22 @@ p, #intro-container li {
 	display: none;
 }
 
-#intro-container #closing-tip,
-#intro-container #close-intro {
+#info-container #closing-tip,
+#info-container #close-intro {
 	position: absolute;
 	text-indent: -9999px;
 }
 
-#intro-container #closing-tip {
+#info-container #closing-tip {
 	display: none;
 	top: 65px;
-	right: 35px;	
-	width: 98px;
-	height: 27px;
+	right: 45px;	
+	width: 89px;
+	height: 45px;
 	background: transparent url(../img/close-arrow.png) no-repeat top left;
 }
 
-#intro-container #close-intro {
+#info-container #close-intro {
 	background: transparent url(../img/close.png) no-repeat top left;
 	top: 15px;
 	right: 15px;
@@ -316,11 +309,11 @@ p, #intro-container li {
 	opacity: 0.6;
 }
 
-#container #open-intro {
+#container #open-info {
 	display: none;
 }
 
-#container #open-intro {
+#container #open-info {
 	position: absolute;
 	background: transparent url(../img/info.png) no-repeat top left;
 	text-indent: -9999px;
@@ -332,15 +325,22 @@ p, #intro-container li {
 	opacity: 0.6;
 }
 
-#container #open-intro:hover,
-#intro-container #close-intro:hover { 
+#container #open-info:hover,
+#info-container #close-intro:hover { 
 	opacity: 1;
 }
 
+#info-toggler {
+	font-size: 14px;
+	color:  #bbb;
+}
+
+#info-toggler,
 footer,
 #controls-wrapper {
 	font-family: 'ArchitectsDaughterRegular', Arial, sans-serif;	
 }
+
 
 
 

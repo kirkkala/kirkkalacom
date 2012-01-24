@@ -2,12 +2,17 @@
 	 jQuery Cookies docs: http://code.google.com/p/cookies/
 */
 $(document).ready(function() {
+
+	function blinkMe(element) {
+		$(element).hide().delay(3000).fadeIn(100).fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100);
+	}    
+    
 	var time = 400;
 	
-	if($.cookies.get('hasClosedIntro') !== true || true) {
-		$('#intro-container').hide().delay(20).fadeIn(time);
-		$('img').css('opacity', 0.1);
-		$('#closing-tip').delay(3000).fadeIn(100).fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100);
+	if($.cookies.get('hasClosedIntro') !== true) {
+		$('#info-container').hide().delay(20).fadeIn(time);
+		$('img').css('opacity', 0.05);
+		blinkMe('#closing-tip');
 	}
 	else {
 		$('#container .open').fadeIn(time);
@@ -16,18 +21,19 @@ $(document).ready(function() {
 	
 	$('.close').click(function() {
 		$.cookies.set('hasClosedIntro', true);
-		$('#intro-container').fadeOut(time);
+		$('#info-container').fadeOut(time);
 		$('#container .open').fadeIn(time);
 		$('.load-item').hide().css('visibility', 'visible').fadeIn(time); 
 		$('img').css('opacity', 1);
 	});
 	
 	$('.open').click(function() {
-		$('#intro-container').fadeIn(time);
+		$('#info-container').fadeIn(time);
 		$('#container .open').fadeOut(time);
 		$('.load-item').fadeOut(time); 
-		$('img').css('opacity', 0.1);
-	});
+		$('img').css('opacity', 0.05);
+		blinkMe('#closing-tip');
+	});	
 });
 
-    
+
