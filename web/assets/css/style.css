@@ -227,20 +227,23 @@ body {
 }
 
 h1 {
-	font: 48px/68px 'PodkovaRegular', Arial, sans-serif;
+	font: 48px/68px 'StMarieThin', Arial, sans-serif;
 	margin: 0;
 }
 
 h2 {
-	font: 30px/34px 'PodkovaRegular', Arial, sans-serif;
+	font: 30px/34px 'StMarieThin', Arial, sans-serif;
 	margin: 0;
 }
 
 p, #info-container ul {
-	font: 24px/24px 'PodkovaRegular', Arial, sans-serif;
+	font: 24px/24px 'StMarieThin', Arial, sans-serif;
 	margin: 0.2em 0 1.2em 0;
 }
 
+#info-container ul {
+	list-style: circle;
+}
 .no-js #info-container {
 	display: block;
 }
@@ -257,7 +260,7 @@ p, #info-container ul {
 	display: none;
 	position: relative;
 	background: #222 url(../img/bg_grunge.jpg);
-	color:  #222;
+	color:  #ededed;
 	width: 70%;
 	min-width:  400px;
 	margin: 50px auto;
