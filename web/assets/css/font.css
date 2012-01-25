@@ -33,3 +33,17 @@
 
 }
 
+/* =============================================================================
+   Classy light sans serif
+   ========================================================================== */
+@font-face {
+    font-family: 'StMarieThin';
+    src: url('../font/StMarie-Thin-webfont.eot');
+    src: url('../font/StMarie-Thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/StMarie-Thin-webfont.woff') format('woff'),
+         url('../font/StMarie-Thin-webfont.ttf') format('truetype'),
+         url('../font/StMarie-Thin-webfont.svg#StMarieThin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
