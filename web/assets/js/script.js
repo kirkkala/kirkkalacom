@@ -28,7 +28,7 @@ $(document).ready(function() {
 	var time = 400;
 	
 	if($.cookies.get('hasClosedIntro') !== true || $.getUrlVar('info') === 'show') {
-		$('#info-container').hide().delay(20).fadeIn(time);
+		$('#info-container').hide().delay(420).fadeIn(time);
 		$('img').css('opacity', 0.05);
 		blinkMe('#closing-tip', 3000);
 	}
