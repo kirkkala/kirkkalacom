@@ -219,7 +219,8 @@ input:invalid, textarea:invalid { background-color: #f0dddd; }
    ========================================================================== */
 
 body {
-	text-shadow: 1px 1px 1px #6e6e6e;	
+	text-shadow: 1px 1px 1px #6e6e6e;
+	filter: dropshadow(color=#6e6e6e, offx=1, offy=1);
 }
 
 .no-js body {
@@ -227,18 +228,18 @@ body {
 }
 
 h1 {
-	font: 48px/68px 'StMarieThin', Arial, sans-serif;
-	margin: 0;
+	font: 4em/1.2em 'StMarieThin', Arial, sans-serif;
+	margin: 0 0 0.8em 0;
 }
 
 h2 {
-	font: 30px/34px 'StMarieThin', Arial, sans-serif;
-	margin: 0;
+	font: 2.6em/1em 'StMarieThin', Arial, sans-serif;
+	margin: 0 0 0.2em 0;
 }
 
 p, #info-container ul {
-	font: 24px/24px 'StMarieThin', Arial, sans-serif;
-	margin: 0.2em 0 1.2em 0;
+	font: 1.8em/1.2em 'StMarieThin', Arial, sans-serif;
+	margin: 0.4em 0 1.6em 0;
 }
 
 #info-container ul {
@@ -261,7 +262,7 @@ p, #info-container ul {
 	position: relative;
 	background: #222 url(../img/bg_grunge.jpg);
 	color:  #ededed;
-	width: 70%;
+	width: 580px;
 	min-width:  400px;
 	margin: 50px auto;
 	border: 4px solid #6e6e6e;
