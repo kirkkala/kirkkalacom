@@ -11,7 +11,7 @@
 	<meta name="author" content="">
 	
 	<meta property="og:title" content="Kirkkala.com">
-	<meta property="og:description" content="Internet playground/Online portfolio of web developer / photo hobbyist Timo Kirkkala">
+	<meta property="og:description" content="Internet playground / online portfolio of web developer / photo hobbyist Timo Kirkkala">
 	<meta property="og:image" content="http://kirkkala.com/apple-touch-icon.png">
 	<meta property="og:url" content="http://kirkkala.com">
 	
