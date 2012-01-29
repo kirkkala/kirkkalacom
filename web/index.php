@@ -70,12 +70,12 @@
 			</div>
 			<div id="controls-wrapper" class="load-item">
 				<div id="controls">
-					<a id="play-button"><img id="pauseplay" src="assets/supersized/img/pause.png" width="54" height="42" /></a>
+					<a id="play-button"><img id="pauseplay" src="assets/supersized/img/pause.png" alt="Pause/play" width="54" height="42" /></a>
 					<div id="slidecounter">
 						<span class="slidenumber"></span> / <span class="totalslides"></span>
 					</div>
 					<div id="slidecaption"></div>
-					<a id="tray-button"><img id="tray-arrow" src="assets/supersized/img/button-tray-up.png" width="54" height="42" /></a>
+					<a id="tray-button"><img id="tray-arrow" src="assets/supersized/img/button-tray-up.png" alt="Open/close tray" width="54" height="42" /></a>
 					<ul id="slide-list"></ul>
 				</div> <!-- /#controls -->
 			</div> <!-- /#controls-wrapper -->
