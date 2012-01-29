@@ -17,18 +17,18 @@ require_once('assets/functions.php');
 	<title dir="ltr"><?php if($photoset_info['title']) { print $photoset_info['title'] .' | ';}else{ print 'The Flickr experiment | '; } ?>Timo Kirkkala | Kalak.org</title>
 	
 	<link rel="shortcut icon" href="/favicon.ico" />
-	<link rel="stylesheet" href="/assets/css/style.css" type="text/css" />
-	<link rel="stylesheet" href="/assets/css/jquery.fancybox-1.3.2.css" type="text/css" />
+	<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+	<link rel="stylesheet" href="assets/css/jquery.fancybox-1.3.2.css" type="text/css" />
 	
-	<script type="text/javascript" src="/assets/js/jquery-1.4.4.min.js"></script>
-	<script type="text/javascript" src="/assets/js/jquery.easing-1.3.pack.js"></script>
-	<script type="text/javascript" src="/assets/js/jquery.fancybox-1.3.2.pack.js"></script>
-	<script type="text/javascript" src="/assets/js/jquery.simpledropdown.js"></script>
-	<script type="text/javascript" src="/assets/js/script.js"></script>
+	<script type="text/javascript" src="assets/js/jquery-1.4.4.min.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.easing-1.3.pack.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.fancybox-1.3.2.pack.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.simpledropdown.js"></script>
+	<script type="text/javascript" src="assets/js/script.js"></script>
 
 </head>
 <body class="nojs">
-
+<div id="archived">You are viewing archived pages of kalak.org.<br />Continue exploring or go to <a href="http://kirkkala.com">kirkkala.com</a> to see latest frontpage.</div>
 <div id="wrapper">
 <?php if(!$cache): ?>
 <div class="error">
@@ -90,6 +90,6 @@ require_once('assets/functions.php');
 </div>
 </div><!-- /content -->
 </div><!-- /wrapper -->
-<?php include_once('assets/analytics.php'); ?>
+<?php include_once('../../assets/analytics.php'); ?>
 </body>
 </html>

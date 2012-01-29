@@ -10,10 +10,10 @@ body {
   background: #1a1a1a;
   color: #ddd;
   font: 100% Arial, sans-serif;
-  padding: 0 80px 30px 80px;
+  padding: 0 0 30px 0;
 }
 
-body.js { background: #1a1a1a url('../img/loading.gif') no-repeat center 200px; }
+body.js { background: #1a1a1a url('../img/loading.gif') no-repeat center 250px; }
 body.not-found { background-image: none }
 
 h1, h2, p { text-shadow: #666 1px 1px 1px;}
@@ -264,3 +264,11 @@ li ul a.selected {
   font-size: 11px;
   padding: 0 5px 0 0;
 }
+
+#archived {
+	background: #f5f5f5; color: red; width:100%; text-align: center; padding: 1em;
+}
+
+#archived a {
+	color: red;
+} 
