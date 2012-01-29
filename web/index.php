@@ -95,6 +95,8 @@
 
 <script defer src="assets/js/plugins.js"></script>
 <script defer src="assets/js/script.js"></script>
+
+<?php include_once('assets/analytics.php'); ?>
   
 </body>
 </html>
