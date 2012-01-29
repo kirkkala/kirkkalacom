@@ -289,6 +289,8 @@ p, #info-container ul {
 }
 
 #container {
+	width: 80%;
+	margin: 3em auto 0 auto;
 }
 
 #info-container {
@@ -299,18 +301,18 @@ p, #info-container ul {
 	width: 320px; /* mobile width */
 	margin: 50px auto;
 	border: 4px solid #6e6e6e;
-	-moz-border-radius: 30px;
-	-webkit-border-radius: 30px;
-	-moz-box-shadow: 8px 8px 30px #111111;
-	-webkit-box-shadow: 8px 8px 30px #111111;
-	box-shadow: 8px 8px 30px #111111;
+	-moz-border-radius: 3em;
+	-webkit-border-radius: 3em;
+	-moz-box-shadow: 8px 8px 3em #111111;
+	-webkit-box-shadow: 8px 8px 3em #111111;
+	box-shadow: 8px 8px 3em #111111;
 
 }
 
 #info-container #info-shadow {
 	position: relative;
-	padding: 30px 50px 50px;
-	border-radius: 30px;
+	padding: 2em 3em 3em 3em;
+	border-radius: 3em;
 	-webkit-box-shadow: inset 0px 0px 180px 40px rgba(00, 0, 0, 1);
 	-moz-box-shadow: inset 0px 0px 180px 40px rgba(00, 0, 0, 1);
 	box-shadow: inset 0px 0px 180px 40px rgba(00, 0, 0, 1);	
@@ -404,7 +406,7 @@ footer,
 	float: left;
 	width: 57px;
 	height: 57px;
-	margin: 0 0.8em 0 0;
+	margin: 0;
 	background: url(../img/sprite.png) no-repeat;
 	filter: alpha(opacity=50);
 	opacity: 0.5;
@@ -421,7 +423,9 @@ footer,
 .some a.linkedin 	{ background-position: -175px 0; }
 
 .fb-like {
-	position: absolute;
+	position: relative;
+	top: 0;
+	left: 0;
 	width: 60px;
 	float: left;
 	margin: 20px 0 0 20px;
@@ -476,9 +480,18 @@ footer,
   	min-width:  400px;
   }
   
+  #info-container #info-shadow {
+  	position: relative;
+  	padding: 3em 5em 5em 5em;
+  }
+  
   #info-container #closing-tip {
   	visibility: visible;
   }
+  
+  .some a {
+  	margin: 0 0.8em 0 0;
+	}
 
 }
 
