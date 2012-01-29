@@ -10,8 +10,8 @@
 	<meta name="description" content="">
 	<meta name="author" content="">
 	
-	<meta property="og:title" content="Kalak.org | Photographs by mr. Timo Kirkkala">
-	<meta property="og:description" content="Internet playground/Online portfolio of web developer/photo hobbyist Timo Kirkkala">
+	<meta property="og:title" content="Kirkkala.com">
+	<meta property="og:description" content="Internet playground/Online portfolio of web developer / photo hobbyist Timo Kirkkala">
 	<meta property="og:image" content="http://kirkkala.com/apple-touch-icon.png">
 	
 	<!-- Mobile viewport optimized: j.mp/bplateviewport -->
