@@ -7,8 +7,8 @@
 	<meta charset="utf-8">
 	
 	<title>photography by mr. Timo Kirkkala</title>
-	<meta name="description" content="">
-	<meta name="author" content="">
+	<meta name="description" content="Internet playground / online portfolio of web developer / photo hobbyist Timo Kirkkala">
+	<meta name="author" content="Timo Kirkkala">
 	
 	<meta property="og:title" content="Kirkkala.com" />
 	<meta property="og:description" content="Internet playground / online portfolio of web developer / photo hobbyist Timo Kirkkala" />
