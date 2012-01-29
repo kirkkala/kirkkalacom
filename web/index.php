@@ -12,7 +12,7 @@
 	
 	<meta property="og:title" content="Kalak.org | Photographs by mr. Timo Kirkkala">
 	<meta property="og:description" content="Internet playground/Online portfolio of web developer/photo hobbyist Timo Kirkkala">
-	<meta property="og:image" content="">
+	<meta property="og:image" content="http://kirkkala.com/apple-touch-icon.png">
 	
 	<!-- Mobile viewport optimized: j.mp/bplateviewport -->
 	<meta name="viewport" content="width=device-width,initial-scale=1">
