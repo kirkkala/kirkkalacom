@@ -18,8 +18,8 @@
 	<!-- Mobile viewport optimized: j.mp/bplateviewport -->
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	
-	<link rel="stylesheet" href="assets/css/style.css" type="text/css" /> 
-	<link rel="stylesheet" href="assets/supersized/css/supersized.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="assets/css/style.min.css" type="text/css" /> 
+	<link rel="stylesheet" href="assets/supersized/css/supersized.min.css" type="text/css" media="screen" />
 	<link rel="stylesheet" href="assets/supersized/theme/supersized.shutter.css" type="text/css" media="screen" />
 	
 	<!-- All .js at the bottom, except for Modernizr / Respond. -->
