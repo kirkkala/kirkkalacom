@@ -17,7 +17,6 @@
 	<!-- Mobile viewport optimized: j.mp/bplateviewport -->
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	
-	<link rel="stylesheet" href="assets/css/font.css" type="text/css" charset="utf-8">
 	<link rel="stylesheet" href="assets/css/style.css" type="text/css" charset="utf-8"> 
 	<link rel="stylesheet" href="assets/supersized/css/supersized.css" type="text/css" media="screen" charset="utf-8" />
 	<link rel="stylesheet" href="assets/supersized/theme/supersized.shutter.css" type="text/css" media="screen" charset="utf-8" />
@@ -27,23 +26,32 @@
 </head>
 
 <body>
-
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div class="fb-like" data-href="http://kirkkala.com" data-send="false" data-layout="button_count" data-width="50" data-show-faces="false" data-colorscheme="dark" data-font="verdana"></div>
 	<div id="container">
 		<div id="open-info" class="open" title="Click to open info">i</div>
 		<div id="info-container">
 			<div id="info-shadow">
 				<h1>Hi, my name is Timo Kirkkala</h1>
-				<p>I am a web developer working at <a href="http://www.activeark.com">Activeark</a><br />and I like to take photos with old cameras.</p>
+				<p style="margin-bottom: 0;">I am a web developer working at <a href="http://www.activeark.com">Activeark</a><br />and I like to take photos with old cameras.</p>
+				<p><small><span class="close">Close</span> this box to see some of my photos or go to <a href="http://www.flickr.com/photos/kalak">Flickr</a> to find more</small></p>
 				<p class="js-disabled">Oh crap! How come you don't have JacaScript enabled..?</p>
 				<h2>Contact me?</h2>
 				<p>Get in touch via email:<br /><a href="timo.kirkkala@gmail.com">timo.kirkkala@gmail.com</a></p>
 				<h2>Me at elsewhere:</h2>
-				<ul>
-					<li><a href="http://www.flickr.com/photos/kalak">flickr.com/photos/kalak</a></li>
-					<li><a href="http://www.facebook.com/timo.kirkkala">facebook.com/timo.kirkkala</a></li>
-					<li><a href="http://www.twitter.com/kirkkala">twitter.com/kirkkala</a></li>
-					<li><a href="http://fi.linkedin.com/in/timokirkkala">fi.linkedin.com/in/timokirkkala</a></li>
-				</ul>
+				<p class="some">
+					<a href="http://www.flickr.com/people/kalak" class="flickr" title="Flickr">flickr.com/photos/kalak</a> 
+					<a href="http://www.facebook.com/timo.kirkkala" class="facebook" title="Facebook">facebook.com/timo.kirkkala</a> 
+					<a href="http://www.twitter.com/kirkkala" class="twitter" title="Twitter">twitter.com/kirkkala</a> 
+					<a href="http://fi.linkedin.com/in/timokirkkala" class="linkedin" title="LinkedIn">fi.linkedin.com/in/timokirkkala</a> 
+				</p>
 				<div id="closing-tip">Close to see my photos</div>
 				<div id="close-intro" class="close" title="Click to close">Close</div>
 			</div> <!-- / #inro-shadow -->

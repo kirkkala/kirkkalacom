@@ -4,3 +4,4 @@ Disallow: /dev/
 Disallow: /superveikkaus/*
 Disallow: /pma/*
 Disallow: /koli2011/*
+Disallow: /supersized/*
