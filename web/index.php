@@ -10,17 +10,17 @@
 	<meta name="description" content="">
 	<meta name="author" content="">
 	
-	<meta property="og:title" content="Kirkkala.com">
-	<meta property="og:description" content="Internet playground / online portfolio of web developer / photo hobbyist Timo Kirkkala">
-	<meta property="og:image" content="http://kirkkala.com/apple-touch-icon.png">
-	<meta property="og:url" content="http://kirkkala.com">
+	<meta property="og:title" content="Kirkkala.com" />
+	<meta property="og:description" content="Internet playground / online portfolio of web developer / photo hobbyist Timo Kirkkala" />
+	<meta property="og:image" content="http://kirkkala.com/apple-touch-icon.png" />
+	<meta property="og:url" content="http://kirkkala.com" />
 	
 	<!-- Mobile viewport optimized: j.mp/bplateviewport -->
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	
-	<link rel="stylesheet" href="assets/css/style.css" type="text/css" charset="utf-8"> 
-	<link rel="stylesheet" href="assets/supersized/css/supersized.css" type="text/css" media="screen" charset="utf-8" />
-	<link rel="stylesheet" href="assets/supersized/theme/supersized.shutter.css" type="text/css" media="screen" charset="utf-8" />
+	<link rel="stylesheet" href="assets/css/style.css" type="text/css" /> 
+	<link rel="stylesheet" href="assets/supersized/css/supersized.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="assets/supersized/theme/supersized.shutter.css" type="text/css" media="screen" />
 	
 	<!-- All .js at the bottom, except for Modernizr / Respond. -->
 	<script src="assets/js/libs/modernizr-2.0.6.min.js"></script>
@@ -70,12 +70,12 @@
 			</div>
 			<div id="controls-wrapper" class="load-item">
 				<div id="controls">
-					<a id="play-button"><img id="pauseplay" src="assets/supersized/img/pause.png"/></a>
+					<a id="play-button"><img id="pauseplay" src="assets/supersized/img/pause.png" width="54" height="42" /></a>
 					<div id="slidecounter">
 						<span class="slidenumber"></span> / <span class="totalslides"></span>
 					</div>
 					<div id="slidecaption"></div>
-					<a id="tray-button"><img id="tray-arrow" src="assets/supersized/img/button-tray-up.png"/></a>
+					<a id="tray-button"><img id="tray-arrow" src="assets/supersized/img/button-tray-up.png" width="54" height="42" /></a>
 					<ul id="slide-list"></ul>
 				</div> <!-- /#controls -->
 			</div> <!-- /#controls-wrapper -->
