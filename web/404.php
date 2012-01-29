@@ -1,67 +1,35 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fi" lang="fi">
+﻿<!doctype html public>
+<!--[if lt IE 7]> <html lang="en-us" class="no-js ie6"> <![endif]-->
+<!--[if IE 7]>    <html lang="en-us" class="no-js ie7"> <![endif]-->
+<!--[if IE 8]>    <html lang="en-us" class="no-js ie8"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en-us" class="no-js"> <!--<![endif]-->
 <head>
-<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1" />
-<meta name="keywords" content="Timo Kirkkala, valokuvaaja, valokuvia, photos, photoblog, flickr" />
-<meta name="description" content="Photos by mr Timo Kirkkala - the flickr API experiment." />
-<meta name="copyright" content="Timo Kirkkala" />
-<title>404 - page not found | Timo Kirkkala | Kalak.org</title>
-
-<link rel="stylesheet" href="/assets/css/style.css" type="text/css" />
-<script type="text/javascript" src="/assets/js/jquery-1.4.4.min.js"></script>
-<script type="text/javascript" src="/assets/js/script.js"></script>
-
+	<meta charset="utf-8">
+	
+	<title>404 - page not found | kirkkala.com</title>
+	
+	<!-- Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	
+	<link rel="stylesheet" href="assets/css/style.css" type="text/css" charset="utf-8"> 
+	
+	<!-- All .js at the bottom, except for Modernizr / Respond. -->
+	<script src="assets/js/libs/modernizr-2.0.6.min.js"></script>
 </head>
-<body class="nojs not-found">
-<div id="wrapper">
-<div id="header">
-<h1><a href="/"><span>This is </span> kalak.org <span> - the internetplayground of mr. Timo Kirkkala</span></a></h1>
 
+<body>
+	<div id="container">
+		<h1>Page not found :(<br /><small style="font-size: 0.4em; line-height: 1em;">(error 404)</small></h1>
+		<p>If you did not misspell the URL the page you were looking for is either moved somewhere else or just lost in the byte-heaven.</p>
+		<p>Go to frontpage <a href="http://kirkkala.com">kirkkala.com</a> or the old pages at <a href="http://kalak.org">kalak.org</a>.</p>
+	</div> <!-- /#container -->
 
-<div class="clear"></div>
+<!-- Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="assets/js/libs/jquery-1.6.2.min.js"><\/script>')</script>
 
-</div><!-- /header -->
-
-<div id="content">
-
-<div id="collaguae">
-<div id="info">
-<div id="photoset_img"><a href="/" title="Back to frontpage"><img src="http://farm4.static.flickr.com/3093/buddyicons/29955877@N04.jpg" alt="Kalak" /></a></div>
-
-<div id="photoset_desc">
-<h2>Page not found. Buu.</h2>
-<p>Unfortunately, the page you were looking for does not exist.<br />
-If you really miss the content you were looking for, drop me an email to <a href="mailto:timo.kirkkala@gmail.com">timo.kirkkala@gmail.com</a> and I might revert that to the site.</p>
-<p><a href="http://www.kalak.org/">www.kalak.org</a></p>
-</div>
-
-</div><!-- /info -->
-
-
-</a><div id="copy">
-<p>&copy; Timo Kirkkala 2010</p>
-</div><!-- /copy -->
-<div class="clear"></div>
-
-</div><!-- /collaguae -->
-
-</div><!-- /content -->
-</div><!-- /wrapper -->
-
-
-<script type="text/javascript"> 
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-</script> 
-<script type="text/javascript"> 
-try {
-var pageTracker = _gat._getTracker("UA-2711157-1");
-pageTracker._trackPageview();
-} catch(err) {}</script> 
-
-<!-- BEGIN Snoobi v1.4 --> 
-<script type="text/javascript" src="http://eu1.snoobi.com/snoop.php?tili=kalak_org"></script> 
-<!-- END Snoobi v1.4 --> 
-
+<script defer src="assets/js/plugins.js"></script>
+<script defer src="assets/js/script.js"></script>
+  
 </body>
 </html>

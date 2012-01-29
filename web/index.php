@@ -34,14 +34,14 @@
   js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-<div class="fb-like" data-href="http://kirkkala.com" data-send="false" data-layout="button_count" data-width="50" data-show-faces="false" data-colorscheme="dark" data-font="verdana"></div>
+<div class="fb-like load-item" data-href="http://kirkkala.com" data-send="false" data-layout="button_count" data-width="50" data-show-faces="false" data-colorscheme="dark" data-font="verdana"></div>
 	<div id="container">
 		<div id="open-info" class="open" title="Click to open info">i</div>
 		<div id="info-container">
 			<div id="info-shadow">
 				<h1>Hi, my name is Timo Kirkkala</h1>
 				<p style="margin-bottom: 0;">I am a web developer working at <a href="http://www.activeark.com">Activeark</a><br />and I like to take photos with old cameras.</p>
-				<p><small><span class="close">Close</span> this box to see some of my photos or go to <a href="http://www.flickr.com/photos/kalak">Flickr</a> to find more</small></p>
+				<p><small><span class="close">Close</span> this box to find a couple of my favorite photos, for more pictures visit my <a href="http://www.flickr.com/photos/kalak">Flickr photostream</a>.</small></p>
 				<p class="js-disabled">Oh crap! How come you don't have JacaScript enabled..?</p>
 				<h2>Contact me?</h2>
 				<p>Get in touch via email:<br /><a href="timo.kirkkala@gmail.com">timo.kirkkala@gmail.com</a></p>
