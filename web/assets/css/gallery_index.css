@@ -1,0 +1,67 @@
+/*
+ * 	Stylesheet for gallery index pages
+ *	- Kuvat
+ *	-- Murmansk
+ *
+ */
+ 
+@font-face {
+    font-family: 'StMarieThin';
+    src: url('../font/StMarie-Thin-webfont.eot');
+    src: url('../font/StMarie-Thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/StMarie-Thin-webfont.woff') format('woff'),
+         url('../font/StMarie-Thin-webfont.ttf') format('truetype'),
+         url('../font/StMarie-Thin-webfont.svg#StMarieThin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body { 
+	font: 62.5% 'StMarieThin', Arial, sans-serif;
+	color: #CED5CD;
+	text-align: center;
+	background-color: #6e6c6c;
+}
+#content { 
+	background: #393939;
+	padding: 2em 0;
+	margin: 5em auto;
+	width: 40em;
+	-webkit-box-shadow: 0 1em 3em rgba(0, 0, 0, 0.7);
+	-moz-box-shadow:0 1em 3em rgba(0, 0, 0, 0.7);
+	box-shadow:0 1em 3em rgba(0, 0, 0, 0.7);
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+#footer {
+	border-top: 1px solid #333;
+	margin: 7em 0 0 0;
+	padding: 0.7em 0 0 0;
+}
+h1 {
+	margin: 1em 2em;
+	font-size: 4em;
+}
+p, ul {
+	font-size: 1.6em;
+	margin: 0.5em 0 1.5em 0;
+}
+ul, li {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+li {
+	margin: 0.2em 0;
+}
+a {
+	color: #fff;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+#copy {
+	font-size: 1.1em;
+}
