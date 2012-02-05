@@ -23,7 +23,7 @@ body {
 <li><strike>2009</strike> <small>(lost in byte heaven)</small></li>
 <li><a href="2010/">2010</a></li>
 <li><a href="2011/">2011</a></li>
-<li><a href="/">2012</a> <small>(current)</small></li>
+<li><a href="/">2012</a> <small>(kirkkala.com)</small></li>
 </ul>
 
 <script type="text/javascript"> 
