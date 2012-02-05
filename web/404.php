@@ -11,10 +11,10 @@
 	<!-- Mobile viewport optimized: j.mp/bplateviewport -->
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	
-	<link rel="stylesheet" href="assets/css/style.css" type="text/css" charset="utf-8"> 
+	<link rel="stylesheet" href="/assets/css/style.css" type="text/css" charset="utf-8"> 
 	
 	<!-- All .js at the bottom, except for Modernizr / Respond. -->
-	<script src="assets/js/libs/modernizr-2.0.6.min.js"></script>
+	<script src="/assets/js/libs/modernizr-2.0.6.min.js"></script>
 </head>
 
 <body>
@@ -26,10 +26,10 @@
 
 <!-- Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="assets/js/libs/jquery-1.6.2.min.js"><\/script>')</script>
+<script>window.jQuery || document.write('<script src="/assets/js/libs/jquery-1.6.2.min.js"><\/script>')</script>
 
-<script defer src="assets/js/plugins.js"></script>
-<script defer src="assets/js/script.js"></script>
+<script defer src="/assets/js/plugins.js"></script>
+<script defer src="/assets/js/script.js"></script>
   
 </body>
 </html>
