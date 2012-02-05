@@ -299,14 +299,20 @@ FileETag None
 <IfModule mod_rewrite.c>
   Options +FollowSymlinks
 	RewriteEngine On
+	
+	## Remove www
 	RewriteCond %{HTTP_HOST} ^www.kalak.org$ [NC]
 	RewriteRule ^(.*)$ http://kalak.org/$1 [R=301,L]
-
 	RewriteCond %{HTTP_HOST} ^www.kirkkala.com$ [NC]
 	RewriteRule ^(.*)$ http://kirkkala.com/$1 [R=301,L]
 
+	## Rewrite kalak.org frontpage to archive
 	RewriteCond %{HTTP_HOST} ^(www.)?kalak.org$
-	RewriteRule ^(/)?$ archive/2011 [L]
+	RewriteRule ^(/)?$ http://kirkkala.com/archive/2011 [L]
+	
+	## Rewrite rest of kalak.org -> kirkkala.com
+	RewriteCond %{HTTP_HOST} ^(www.)?kalak.org$
+	RewriteRule ^(.*)$ http://kirkkala.com/$1 [L]
 	
 	RewriteRule ^kuvat/murmansk-tavastialla-31-7-2009(.*) /kuvat/murmansk/tavastia2009 [R=301,NC,L]
 	RewriteRule ^juttuja/snarakoski(.*) /kuvat/vimpeli/2009$1 [R=301,NC,L]
