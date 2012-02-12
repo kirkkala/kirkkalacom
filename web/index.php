@@ -45,7 +45,7 @@
 				<p><small><span class="close">Close</span> this box to find a couple of my favorite photos. For more pictures visit my <a href="http://www.flickr.com/photos/kalak">Flickr photostream</a>.</small></p>
 				<p class="js-disabled">Oh crap! How come you don't have JacaScript enabled..?</p>
 				<h2>Contact me?</h2>
-				<p>Get in touch via email:<br /><a href="timo.kirkkala@gmail.com">timo.kirkkala@gmail.com</a></p>
+				<p>Get in touch via email:<br /><a href="mailto:timo.kirkkala@gmail.com">timo.kirkkala@gmail.com</a></p>
 				<h2>Me elsewhere:</h2>
 				<p class="some">
 					<a href="http://www.flickr.com/people/kalak" class="flickr" title="Flickr">flickr.com/photos/kalak</a> 
