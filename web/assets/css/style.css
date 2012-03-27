@@ -397,6 +397,12 @@ footer,
 	font-family: 'ArchitectsDaughterRegular', Arial, sans-serif;	
 }
 
+#progress-back,
+#controls-wrapper {
+	display: none !important; /* hide on mobile */
+}
+
+
 .some {
 	margin-bottom: 75px;
 }
@@ -496,6 +502,11 @@ footer,
 
 @media only screen and (min-width: 768px) {
   /* Style adjustments for viewports 768px and over go here */
+  
+  #supersized-container #progress-back,
+  #supersized-container #controls-wrapper {
+  	display: block !important;
+  }
 
 }
 
