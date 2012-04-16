@@ -12,8 +12,11 @@ jQuery(function($){
 		// Components
 		slide_links				:	'blank',	// Individual links for each slide (Options: false, 'num', 'name', 'blank')
 		slides						:	[					// Slideshow Images
-			{image : 'supersized/nuuksio-skyrock.jpg', title : 'Skyrock', thumb : 'supersized/thumb/nuuksio-skyrock.jpg', url : ''},
-			{image : 'supersized/aut.jpg', title : 'Aut/Egg/Ei/Huevo/Oeuf/Muna/Uovo/Ägg', thumb : 'supersized/thumb/aut.jpg', url : ''},
+			{image : 'supersized/nationalpark_cahuita.jpg', title : 'Cahuita National Park, Costa Rica', thumb : 'supersized/thumb/nationalpark_cahuita.jpg', url : ''},
+			{image : 'supersized/playacarrillo.jpg', title : 'Beach pattern, Playa Carrillo', thumb : 'supersized/thumb/playacarrillo.jpg', url : ''},			
+			{image : 'supersized/coming_home.jpg', title : 'Coming home', thumb : 'supersized/thumb/coming_home.jpg', url : ''},
+			{image : 'supersized/nuuksio-skyrock.jpg', title : 'Skyrock', thumb : 'supersized/thumb/nuuksio-skyrock.jpg', url : ''},			
+			{image : 'supersized/aut.jpg', title : 'Aut', thumb : 'supersized/thumb/aut.jpg', url : ''},
 			{image : 'supersized/birches.jpg', title : 'Karvasalmi birches', thumb : 'supersized/thumb/birches.jpg', url : ''},
 			{image : 'supersized/hki_ballsofsteel.jpg', title : 'Balls of steel', thumb : 'supersized/thumb/hki_ballsofsteel.jpg', url : ''},
 			{image : 'supersized/hki_kiosk.jpg', title : 'Kiosk', thumb : 'supersized/thumb/hki_kiosk.jpg', url : ''},
