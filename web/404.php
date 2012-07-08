@@ -19,9 +19,8 @@
 
 <body>
 	<div id="container">
-		<h1>Page not found :(<br /><small style="font-size: 0.4em; line-height: 1em;">(error 404)</small></h1>
-		<p>If you did not misspell the URL the page you were looking for is either moved somewhere else or just lost in the byte-heaven.</p>
-		<p>Go to frontpage <a href="http://kirkkala.com">kirkkala.com</a> or the old pages at <a href="http://kalak.org">kalak.org</a>.</p>
+		<h1>Page not found. Buu.<br /><small style="font-size: 0.4em; line-height: 1em;">(error 404)</small></h1>
+		<p><a href="http://kirkkala.com">Go home</a>.</p>
 	</div> <!-- /#container -->
 
 <!-- Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
