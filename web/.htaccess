@@ -302,13 +302,13 @@ FileETag None
 
 	## rewrite for the altitude dev
 	RewriteCond %{HTTP_HOST} ^dev\.altitude\.kirkkala\.com$
-	#  Check to see if the rewrite already happened (prevent infinite loop of internal rewrites)
+	# Check to see if the rewrite already happened (prevent infinite loop of internal rewrites)
 	RewriteCond %{REQUEST_URI} !^/dev(/.*|$)
 	RewriteRule ^(.*) /dev/altitude/$1 [L]
 
   ## rewrite for timo.kirkkala.com
   RewriteCond %{HTTP_HOST} ^timo\.kirkkala\.com$
-  #  Check to see if the rewrite already happened (prevent infinite loop of internal rewrites)
+  # Check to see if the rewrite already happened (prevent infinite loop of internal rewrites)
   RewriteCond %{REQUEST_URI} !^/cv(/.*|$)
   RewriteRule ^(.*) /cv/$1 [L]
 
