@@ -325,6 +325,10 @@ FileETag None
 	RewriteCond %{HTTP_HOST} ^(www.)?kalak.org$
 	RewriteRule ^(.*)$ http://kirkkala.com/$1 [R=301,NC,L]
 
+  ## Restructured directories
+  RewriteRule ^haat/(.*) /kuvat/haat/$1 [R=301,NC,L]
+  RewriteRule ^kuvat/annatomas /kuvat/haat/annatomas/ [R=301,NC,L]
+
 
   # Any additional special rewrites
 	RewriteRule ^kuvat/murmansk-tavastialla-31-7-2009(.*) /kuvat/murmansk/tavastia2009 [R=301,NC,L]
