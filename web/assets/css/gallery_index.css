@@ -1,10 +1,10 @@
 /*
  * 	Stylesheet for gallery index pages
- *	- Kuvat
- *	-- Murmansk
+ *	- kuvat/murmansk
+ *  - /haat
  *
  */
- 
+
 @font-face {
     font-family: 'StMarieThin';
     src: url('../font/StMarie-Thin-webfont.eot');
@@ -16,13 +16,13 @@
     font-style: normal;
 }
 
-body { 
+body {
 	font: 62.5% 'StMarieThin', Arial, sans-serif;
 	color: #CED5CD;
 	text-align: center;
 	background-color: #6e6c6c;
 }
-#content { 
+#content {
 	background: #393939;
 	padding: 2em 0;
 	margin: 5em auto;
@@ -64,4 +64,48 @@ a:hover {
 }
 #copy {
 	font-size: 1.1em;
+}
+
+
+/*
+ * Gallery version2 overrides
+ */
+body.gallery_v2 {
+  background: rgb(255,255,255);
+  margin: 0;
+  padding: 0;
+}
+.gallery_v2 #content {
+  height: 360px;
+  width: 450px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -200px;
+  margin-left: -225px;
+  background: rgb(0,0,0);
+  background: rgba(0,0,0,0.5);
+}
+.gallery_v2 #content li {
+  margin: 0 0 20px 0;
+  font-size: 18px;
+}
+.gallery_v2 #footer {
+  margin: 5em 0 0 0;
+}
+
+@media only screen and (max-width: 540px) {
+  .gallery_v2 #content {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0;
+    height: 1200px;
+    width: 100%;
+    background: #333;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+  }
+
 }

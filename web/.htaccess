@@ -328,6 +328,7 @@ FileETag None
   ## Restructured directories
   RewriteRule ^haat/(.*) /kuvat/haat/$1 [R=301,NC,L]
   RewriteRule ^kuvat/annatomas /kuvat/haat/annatomas/ [R=301,NC,L]
+  RewriteRule ^kuvat/activeark/curl /kuvat/activeark/otters/2010-teamday [R=301,NC,L]
 
 
   # Any additional special rewrites
