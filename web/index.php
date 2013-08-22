@@ -3,25 +3,26 @@
 <!--[if IE 7]>    <html lang="en-us" class="no-js ie7"> <![endif]-->
 <!--[if IE 8]>    <html lang="en-us" class="no-js ie8"> <![endif]-->
 <!--[if gt IE 8]><!--> <html lang="en-us" class="no-js"> <!--<![endif]-->
+<!-- fuji -->
 <head>
 	<meta charset="utf-8">
-	
+
 	<title>photography by mr. Timo Kirkkala</title>
 	<meta name="description" content="Internet playground / online portfolio of web developer / photo hobbyist Timo Kirkkala">
 	<meta name="author" content="Timo Kirkkala">
-	
+
 	<meta property="og:title" content="Kirkkala.com" />
 	<meta property="og:description" content="Internet playground / online portfolio of web developer / photo hobbyist Timo Kirkkala" />
 	<meta property="og:image" content="http://kirkkala.com/apple-touch-icon.png" />
 	<meta property="og:url" content="http://kirkkala.com" />
-	
+
 	<!-- Mobile viewport optimized: j.mp/bplateviewport -->
 	<meta name="viewport" content="width=device-width,initial-scale=1">
-	
-	<link rel="stylesheet" href="assets/css/style.min.css" type="text/css" /> 
+
+	<link rel="stylesheet" href="assets/css/style.min.css" type="text/css" />
 	<link rel="stylesheet" href="assets/supersized/css/supersized.min.css" type="text/css" media="screen" />
 	<link rel="stylesheet" href="assets/supersized/theme/supersized.shutter.css" type="text/css" media="screen" />
-	
+
 	<!-- All .js at the bottom, except for Modernizr / Respond. -->
 	<script src="assets/js/libs/modernizr-2.0.6.min.js"></script>
 </head>
@@ -40,24 +41,24 @@
 		<div id="open-info" class="open" title="Click to open info">i</div>
 		<div id="info-container">
 			<div id="info-shadow">
-				<h1>Hi, my name is Timo Kirkkala</h1>
-				<p style="margin-bottom: 0;">I am a web developer working at <a href="http://www.activeark.com">Activeark</a><br />and I like to take photos with old cameras.</p>
-				<p><small><span class="close">Close</span> this box to find a couple of my favorite photos. For more pictures visit my <a href="http://www.flickr.com/photos/kalak">Flickr photostream</a>.</small></p>
+				<h1>Hi, I am Timo.</h1>
+				<p style="margin-bottom: 0;">During office hours I am a web developer at <a href="http://activearkjwt.com">Activeark&nbsp;JWT</a> and on my freetime I like to take photos with old cameras.</p>
+				<p><small><span class="close">Close</span> this box to find some of my analogue film works. For more pictures visit my <a href="http://www.flickr.com/photos/kalak">Flickr photostream</a>.</small></p>
 				<p class="js-disabled">Oh crap! How come you don't have JacaScript enabled..?</p>
 				<h2>Contact me?</h2>
 				<p>Get in touch via email:<br /><a href="mailto:timo.kirkkala@gmail.com">timo.kirkkala@gmail.com</a></p>
 				<h2>Me elsewhere:</h2>
 				<p class="some">
-					<a href="http://www.flickr.com/people/kalak" class="flickr" title="Flickr">flickr.com/photos/kalak</a> 
-					<a href="http://www.facebook.com/timo.kirkkala" class="facebook" title="Facebook">facebook.com/timo.kirkkala</a> 
-					<a href="http://www.twitter.com/kirkkala" class="twitter" title="Twitter">twitter.com/kirkkala</a> 
-					<a href="http://fi.linkedin.com/in/timokirkkala" class="linkedin" title="LinkedIn">fi.linkedin.com/in/timokirkkala</a> 
+					<a href="http://www.flickr.com/people/kalak" class="flickr" title="Flickr">flickr.com/photos/kalak</a>
+					<a href="http://www.facebook.com/timo.kirkkala" class="facebook" title="Facebook">facebook.com/timo.kirkkala</a>
+					<a href="http://www.twitter.com/kirkkala" class="twitter" title="Twitter">twitter.com/kirkkala</a>
+					<a href="http://fi.linkedin.com/in/timokirkkala" class="linkedin" title="LinkedIn">fi.linkedin.com/in/timokirkkala</a>
 				</p>
 				<div id="closing-tip">Close to see my photos</div>
 				<div id="close-intro" class="close" title="Click to close">Close</div>
 			</div> <!-- / #inro-shadow -->
 		</div> <!-- /#info-container -->
-		
+
 		<div id="supersized-container">
 			<a id="prevslide" class="load-item"></a>
 			<a id="nextslide" class="load-item"></a>
@@ -97,6 +98,6 @@
 <script defer src="assets/js/script.js"></script>
 
 <?php include_once('assets/analytics.php'); ?>
-  
+
 </body>
 </html>
