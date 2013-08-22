@@ -1,6 +1,6 @@
 <?php 
 
-$base_url = 'http://www.kalak.org/archive/2010';
+$base_url = 'http://kirkkala.com/archive/2010';
 
 /* The box */
 if($_GET['box'] == 'no')
