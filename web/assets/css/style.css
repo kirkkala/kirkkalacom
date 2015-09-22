@@ -414,7 +414,7 @@ footer,
 	text-indent: -9999px;
 	display: block;
 	float: left;
-	width: 57px;
+	width: 53px;
 	height: 57px;
 	margin: 0;
 	background: url(../img/sprite.png) no-repeat;
@@ -499,7 +499,7 @@ footer,
   }
 
   .some a {
-  	margin: 0 0.8em 0 0;
+  	margin: 0 5px 0 0;
 	}
 
 }

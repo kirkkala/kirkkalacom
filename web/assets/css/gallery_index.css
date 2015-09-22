@@ -86,6 +86,9 @@ body.gallery_v2 {
   background: rgb(0,0,0);
   background: rgba(0,0,0,0.5);
 }
+.gallery_v2.jennavellu #content {
+  min-height: 420px;
+}
 .gallery_v2 #content li {
   margin: 0 0 20px 0;
   font-size: 18px;
