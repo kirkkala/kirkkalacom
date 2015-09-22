@@ -41,10 +41,9 @@
 		<div id="open-info" class="open" title="Click to open info">i</div>
 		<div id="info-container">
 			<div id="info-shadow">
-				<h1>Hi, I am Timo.</h1>
-				<p style="margin-bottom: 0;">During office hours I am a web developer at <a href="http://activearkjwt.com">Activeark&nbsp;JWT</a> and on my freetime I like to take photos with old cameras.</p>
-				<p><small><span class="close">Close</span> this box to find some of my analogue film works. For more pictures visit my <a href="http://www.flickr.com/photos/kalak">Flickr photostream</a>.</small></p>
-				<p class="js-disabled">Oh crap! How come you don't have JacaScript enabled..?</p>
+				<h1>I am Timo</h1>
+				<p style="margin-bottom: 0;">And I am developing the internet at <a href="http://www.mirumagency.com/helsinki">Mirum Helsinki</a>. On my freetime I like to take pictures with old cameras.</p>
+				<p>For more photos visit my <a href="http://www.flickr.com/photos/kalak">Flickr photostream</a>.</small></p>
 				<h2>Contact me?</h2>
 				<p>Get in touch via email:<br /><a href="mailto:timo.kirkkala@gmail.com">timo.kirkkala@gmail.com</a></p>
 				<h2>Me elsewhere:</h2>
@@ -87,7 +86,6 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="assets/js/libs/jquery-1.6.2.min.js"><\/script>')</script>
 
-<script type="text/javascript" src="assets/js/libs/jquery.cookies.2.2.0.min.js"></script>
 <script type="text/javascript" src="assets/supersized/js/jquery.easing.min.js"></script>
 <script type="text/javascript" src="assets/supersized/js/supersized.3.2.6.min.js"></script>
 <script type="text/javascript" src="assets/supersized/theme/supersized.shutter.min.js"></script>
