@@ -12,6 +12,8 @@ jQuery(function($){
 		// Components
 		slide_links				:	'blank',	// Individual links for each slide (Options: false, 'num', 'name', 'blank')
 		slides						:	[					// Slideshow Images
+			{image : 'http://farm3.staticflickr.com/2859/10997001603_db7df7431f_o.jpg', title : 'Yosemite National Park, USA', thumb : 'http://farm3.staticflickr.com/2859/10997001603_db7df7431f_o.jpg', url : ''},
+			{image : 'http://farm4.staticflickr.com/3822/11023866536_c24f20ac17_o.jpg', title : 'Mirror Lake, Yosemite National Park, USA', thumb : 'http://farm4.staticflickr.com/3822/11023866536_c24f20ac17_o.jpg', url : ''},
 			{image : 'supersized/usa-monumentvalley-road.jpg', title : 'Monument Valley, AR, USA', thumb : 'supersized/thumb/usa-monumentvalley-road.jpg', url : ''},
 			{image : 'supersized/usa-monumentvalley-mittens.jpg', title : 'Monument Valley, AR, USA', thumb : 'supersized/thumb/usa-monumentvalley-mittens.jpg', url : ''},
 			{image : 'supersized/ireland-obriens-tower.jpg', title : 'O\'Brien\'s Tower, Ireland', thumb : 'supersized/thumb/ireland-obriens-tower.jpg', url : ''},
