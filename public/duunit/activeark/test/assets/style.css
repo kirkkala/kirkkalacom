@@ -1,0 +1,37 @@
+/*
+ * Common styles
+ */
+
+html, body, div, ul { margin: 0; padding: 0; }
+
+body {
+  color: #333;
+	font: normal 12px/18px Verdana, sans-serif;
+}
+
+#content { }
+
+p { margin: 0; padding: 7px 0; }
+a { outline: none; }
+
+.ui-selectmenu {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+
+.ui-selectmenu,
+ul.ui-selectmenu-menu,
+ul.ui-selectmenu-menu li a {
+  width: 250px !important;
+  background: #fff;
+}
+
+
+ul.ui-selectmenu-menu li,
+ul.ui-selectmenu-menu li a {
+  margin: 0;
+  padding: 0px 10px;
+}
+
+
