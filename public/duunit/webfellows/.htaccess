@@ -1,0 +1,4 @@
+AuthUserFile /var/www/customers/kalakorg/.salasanat
+AuthName "Salasanasuojattu sivusto"
+AuthType Basic
+require user webfellow

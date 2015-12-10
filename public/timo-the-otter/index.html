@@ -1,0 +1,519 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>Timo the Otter - Team presentation</title>
+
+    <meta name="description" content="Timo the otter">
+    <meta name="author" content="Timo Kirkkala">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="css/reveal.min.css">
+    <link rel="stylesheet" href="css/theme/night.css" id="theme">
+
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+    <script>
+      if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+      }
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="reveal">
+
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+        <section>
+
+          <h2>Hi there,</h2>
+          <h1>I am Timo</h1>
+
+        </section>
+
+        <section>
+          <section>
+            <h2>Activearker since November 2009</h2>
+            <aside class="notes">
+              Otter from the beginning<br />
+              previously Johnson</aside>
+          </section>
+
+          <section>
+                      <h2>Senior Drupal Developer</h2>
+          <pre style="font-size:0.3em;"><code data-trim contenteditable>
+/**
+ * Helper function to locate our filter value in the
+ * $_SESSION['node_overview_filter'] array.
+ *
+ *
+ * @return int|null
+ *   A string value representing the timestamp to begin searching content for.
+ */
+function _find_kc_content_filter_value() {
+  // Validate that the values are set.
+  if (!isset($_SESSION['node_overview_filter'])) {
+    return;
+  }
+
+  // Initialize output.
+  $value = NULL;
+
+  // Loop over filters to find ours.
+  foreach ($_SESSION['node_overview_filter'] as $k => $v) {
+    // Skip other filters.
+    if ('updated' !== $v[0]) {
+      continue;
+    }
+
+    // Set the return value once found and break loop.
+    $value = intval($v[1]);
+    break;
+  }
+
+  return $value;
+}
+          </code></pre>
+          </section>
+
+          <section>
+            <h2>Clients including</h2>
+            <ul>
+              <li>NSN/Nokia Networks</li>
+              <li>Nokia</li>
+              <li>Konecranes</li>
+              <li>Koskisen</li>
+              <li>Aditro</li>
+              <li>...</li>
+            </ul>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h1>Me in Person</h1>
+            <aside class="notes">lirum larum</aside>
+          </section>
+
+          <section>
+            <h2>Random facts</h2>
+            <p class="fragment fade-in">Middle-aged<br /><small>(35 years old next year!?)</small></p>
+            <p class="fragment fade-in">Shoe size 47<br /><small>(makes it easier to stand)</small></p>
+            <p class="fragment fade-in">Has a sister<br /><small>(and a 9 years old niece)</small></p>
+            <p class="fragment fade-in">Loves to cook<br /><small>(but is allergic to seafood)</small></p>
+            <p class="fragment fade-in">Played ice Hockey<br /><small>(for 12 years)</small></p>
+            <p class="fragment fade-in">
+              <img width="130" height="394" src="img/hamis.png" alt="Heikki Hämähäkki" style="border:none;box-shadow:none;background:transparent;position:absolute;bottom:0;right:0;height:100%;width:auto;" />
+              Has arachnophobia<br /><small>(is afraid os spiders)</small>
+            </p>
+
+
+            <!--          <section>
+            <h2>I am afraid of</h2>
+            <div class="fragment fade-in">
+              <figure>
+                <img width="130" height="394" src="img/hamis.png" alt="Heikki Hämähäkki" />
+                <figcaption>Spiders</figcaption>
+              </figure>
+            </div>
+          </section> -->
+          </section>
+
+          <section>
+            <h2>From Helsinki and back there<br /><small>(Places I have lived in)</small></h2>
+            <p class="fragment fade-in">Born in Kruununhaka, Helsinki 1980</p>
+            <p class="fragment fade-in">Vantaa in 1986</p>
+            <p class="fragment fade-in">Nurmijärvi in 1999</p>
+            <p class="fragment fade-in">Tampere in 2002</p>
+            <p class="fragment fade-in">Back to Helsinki in 2004</p>
+            <p class="fragment fade-in">Kallio since 2004 with my girlfriend Kati</p>
+          </section>
+
+          <section>
+            <h2>School?</h2>
+            <p class="fragment fade-in">Highschool (lukio) 1996-2003<br /><small>(yes it took 7 years to finish it)</small></p>
+            <p class="fragment fade-in">Bachelor of Business Administration in ICT 2004-2009<br /><small>Haaga Helia University of Applied Sciences</small></p>
+          </section>
+
+          <section>
+            <h2>Work before AAJWT</h2>
+            <p class="fragment fade-in">Mainonnan suunnittelija, Ad Tell Oy<br /><small>(my first ever paycheck, year 1987)</small></p>
+            <p class="fragment fade-in">Hamburger guy / vuoropäällikkö at Hesburger Nurmijärvi<br /><small>1998-2001</small></p>
+            <p class="fragment fade-in">Salesman at Mediapuhelin, a mobile phone shop<br /><small>2002-2006</small></p>
+            <p class="fragment fade-in">Freelance web developer / SolveIT Finland<br /><small>2005-2008</small></p>
+            <p class="fragment fade-in">Web development / testing / documentation at YLE<br /><small>2008-2009</small></p>
+            <p class="fragment fade-in">Activeark JWT, that Drupal guy<br /><small>2009-></small></p>
+          </section>
+
+<!--          <section>
+            <h2>I am afraid of</h2>
+            <div class="fragment fade-in">
+              <figure>
+                <img width="130" height="394" src="img/hamis.png" alt="Heikki Hämähäkki" />
+                <figcaption>Spiders</figcaption>
+              </figure>
+            </div>
+          </section> -->
+        </section>
+
+        <section>
+          <section>
+            <h1>Oh, and I'm a Dad</h1>
+          </section>
+
+          <section>
+            <figure>
+              <img width="600" height="600" src="http://photos-h.ak.instagram.com/hphotos-ak-xap1/10727656_476493369160207_1421954358_n.jpg" />
+              <figcaption>Our baby's name is Pihla</figcaption>
+            </figure>
+          </section>
+
+          <section>
+            <figure>
+              <img width="1169" height="600" src="img/kirkvistit.jpg" />
+              <figcaption>The whole Kirkqvist family</figcaption>
+            </figure>
+          </section>
+        </section>
+
+        <section>
+          <h1>Hobbies and interests</h1>
+        </section>
+
+        <section>
+          <section>
+            <h1>Sports</h1>
+            <p>I try to keep fit</p>
+          </section>
+          <section>
+            <h3>Including</h3>
+            <p class="fragment roll-in">Floorball</p>
+            <p class="fragment roll-in">Ice-hockey</p>
+            <p class="fragment roll-in">Snowboarding</p>
+            <p class="fragment roll-in">Football</p>
+            <p class="fragment roll-in">Jogging/running</p>
+            <p class="fragment roll-in">Boxing (savate)</p>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h1>Cameras</h1>
+            <p>I like old cameras</p>
+          </section>
+          <section>
+            <figure>
+              <a href="https://www.flickr.com/photos/kalak/3421555363" class="image">
+                <img width="640" height="500" src="https://farm4.staticflickr.com/3305/3421555363_79a916d852_z.jpg?zz=1" alt="" />
+              </a>
+              <figcaption>Hasselbad 500C (ca. 1969)</figcaption>
+            </figure>
+          </section>
+
+          <section>
+            <figure>
+              <a href="https://www.flickr.com/photos/kalak/5743284026" class="image">
+                <img width="640" height="427" src="https://farm4.staticflickr.com/3642/5743284026_78f948b5b9_z.jpg" alt="" />
+              </a>
+            <figcaption>Hasselbad 500C/M (ca. 1981)<br />and a DYI cardboard replica (ca. 2011)</figcaption>
+            </figure>
+          </section>
+
+          <section>
+            <figure>
+              <a href="https://www.flickr.com/photos/kalak/4610557629" class="image">
+                <img width="333" height="500" src="https://farm2.staticflickr.com/1390/4610557629_83bb762913.jpg" alt="">
+              </a>
+              <figcaption>Rolleiflex K4A (ca. 1959)</figcaption>
+            </figure>
+          </section>
+
+          <section>
+            <figure>
+              <a href="https://www.flickr.com/photos/kalak/6006360360/" class="image">
+                <img width="640" height="427" src="https://farm7.staticflickr.com/6028/6006360360_f19e31b432_z.jpg" alt="" />
+              </a>
+              <figcaption>Zeiss IKON Ikonta (ca. 1952)</figcaption>
+            </figure>
+          </section>
+
+          <section>
+            <figure>
+              <img width="600" height="600" src="img/toyo.jpg" />
+              <figcaption>Large Format fun last summer</figcaption>
+            </figure>
+          </section>
+
+          <section>
+            <figure>
+              <img width="640" height="352" src="img/matchboxpinhole.jpg" alt="" />
+              <figcaption>Pinhole camera made out of a matchbox</figcaption>
+            </figure>
+          </section>
+
+          <section>
+            <figure>
+              <img width="640" height="352" src="img/dianapolaroid.jpg" alt="" />
+              <figcaption>Polaroid back duct taped in plastic Diana Lomo camera</figcaption>
+            </figure>
+          </section>
+
+          <section>
+            <figure>
+              <img width="880" height="497" src="img/camerabag.jpg" alt="" />
+              <figcaption>..and some more..</figcaption>
+            </figure>
+          </section>
+
+        </section>
+
+        <section>
+          <section>
+            <h1>Photography</h1>
+            <p>I like to take pictures with old cameras</p>
+          </section>
+
+          <section>
+            <figure>
+              <a href="https://www.flickr.com/photos/29955877@N04/11936944426" class="image">
+                <img width="600" height="600" src="https://farm6.staticflickr.com/5527/11936944426_d9798bb1fa_z.jpg" alt="" />
+              </a>
+              <figcaption>Half Dome</figcaption>
+            </figure>
+          </section>
+
+          <section>
+            <figure>
+              <a href="https://www.flickr.com/photos/29955877@N04/12053415893" class="image">
+                <img width="900" height="457" src="https://farm8.staticflickr.com/7374/12053415893_6d5f3fbca1_b.jpg" alt="" />
+              </a>
+              <figcaption>Golden Gate</figcaption>
+            </figure>
+          </section>
+
+          <section>
+            <figure>
+              <a href="https://www.flickr.com/photos/kalak/6010047956" class="image">
+                <img width="1024" height="346" src="https://farm7.staticflickr.com/6145/6010047956_8fe519c9fb_b.jpg" alt="" />
+              </a>
+              <figcaption>Greenwich</figcaption>
+            </figure>
+          </section>
+
+          <section>
+            <figure>
+              <a href="https://www.flickr.com/photos/kalak/9641732005/" class="image">
+                <img width="600" height="600" src="https://farm8.staticflickr.com/7395/9641732005_67263bc7e6_c.jpg" alt="" />
+              </a>
+              <figcaption>Angels landing</figcaption>
+            </figure>
+          </section>
+
+          <section>
+            <figure>
+              <a href="https://www.flickr.com/photos/kalak/10387084394/" class="image">
+                <img width="600" height="600" src="https://farm8.staticflickr.com/7354/10387084394_9efbe40420_c.jpg" alt="" />
+              </a>
+              <figcaption>Death Valley</figcaption>
+            </figure>
+          </section>
+
+          <section>
+            <figure>
+              <a href="https://www.flickr.com/photos/kalak/4300686952/" class="image">
+                <img width="1024" height="509" src="https://farm3.staticflickr.com/2756/4300686952_4ee8e75017_o.jpg" alt="" />
+              </a>
+              <figcaption>Seasons in Finland</figcaption>
+            </figure>
+          </section>
+
+          <section>
+            <figure>
+              <a href="https://www.flickr.com/photos/kalak/4857960478/" class="image">
+                <img width="600" height="600" src="https://farm5.staticflickr.com/4120/4857960478_2547444fae_b.jpg" alt="" />
+              </a>
+              <figcaption>Skógafoss</figcaption>
+            </figure>
+          </section>
+
+          <section>
+            <figure>
+              <a href="https://www.flickr.com/photos/kalak/4858454880" class="image">
+                <img width="600" height="600" src="https://farm5.staticflickr.com/4074/4858454880_9a5b74a3d7_b.jpg" alt="" />
+              </a>
+              <figcaption>Grundarfjörður</figcaption>
+            </figure>
+          </section>
+
+          <section>
+            <figure>
+              <a href="https://www.flickr.com/photos/kalak/6314950861/" class="image">
+                <img width="600" height="600" src="https://farm7.staticflickr.com/6117/6314950861_74e3f382e3_b.jpg" alt="" />
+              </a>
+              <figcaption>Lofoten</figcaption>
+            </figure>
+          </section>
+
+          <section>
+            <figure>
+              <a href="https://www.flickr.com/photos/kalak/6483883819/" class="image">
+                <img width="1024" height="367" src="https://farm8.staticflickr.com/7153/6483883819_e66affa74b_b.jpg" alt="" />
+              </a>
+              <figcaption>Our summer cottage,<br /><small>(a matchbox pinhole camera experiment)</small></figcaption>
+            </figure>
+          </section>
+
+          <section>
+            <figure>
+              <a href="https://www.flickr.com/photos/kalak/6906908850/" class="image">
+                <img width="600" height="600" src="https://farm6.staticflickr.com/5457/6906908850_dbf66e8637_c.jpg" alt="" />
+              </a>
+              <figcaption>Cahuita national park</figcaption>
+            </figure>
+          </section>
+
+          <section>
+            <figure>
+              <a href="https://www.flickr.com/photos/kalak/6906906276/" class="image">
+                <img width="600" height="600" src="https://farm6.staticflickr.com/5327/6906906276_c946048f01_c.jpg" alt="" />
+              </a>
+              <figcaption>Rio Celecte, Costa Rica</figcaption>
+            </figure>
+          </section>
+
+          <section>
+            <figure>
+              <a href="https://www.flickr.com/photos/kalak/7964768496/" class="image">
+                <img width="600" height="600" src="https://farm9.staticflickr.com/8442/7964768496_d3509f5101_c.jpg" alt="" />
+              </a>
+              <figcaption>Cliffs of Moher, Ireland</figcaption>
+            </figure>
+          </section>
+
+          <section>
+            <figure>
+              <a href="https://www.flickr.com/photos/kalak/8278265157/" class="image">
+                <img width="600" height="600" src="https://farm9.staticflickr.com/8059/8278265157_2e1bde2c13_c.jpg" alt="" />
+              </a>
+              <figcaption>Pravesh Marg, Navi Mumbai</figcaption>
+            </figure>
+          </section>
+
+          <section>
+            <figure>
+              <a href="https://www.flickr.com/photos/kalak/3768002239/" class="image">
+                <img width="600" height="600" src="https://farm4.staticflickr.com/3477/3768002239_68013b9738_z.jpg" alt="" />
+              </a>
+              <figcaption>Sami</figcaption>
+            </figure>
+          </section>
+
+          <section>
+            <figure>
+              <a href="https://www.flickr.com/photos/kalak/4050457799/" class="image">
+                <img width="600" height="600" src="https://farm3.staticflickr.com/2728/4050457799_713a51c7b4_o.jpg" alt="" />
+              </a>
+              <figcaption>An egg</figcaption>
+            </figure>
+          </section>
+
+          <section>
+            <figure>
+              <a href="https://www.flickr.com/photos/kalak/3943574379/" class="image">
+                <img width="800" height="530" src="https://farm3.staticflickr.com/2600/3943574379_84d2087f17_o.jpg" alt="" />
+              </a>
+              <figcaption>Nuuksio National Park</figcaption>
+            </figure>
+          </section>
+<!--
+          <section>
+            <figure>
+              <a href="" class="image">
+                <img width="600" height="600" src="" alt="" />
+              </a>
+              <figcaption></figcaption>
+            </figure>
+          </section>
+-->
+
+        </section>
+        <section data-transition="linear" data-background="img/thatsallfolks.jpg">
+          <p style="display: inline-block; margin: 460px auto 0 auto; padding: 20px 40px; border-radius: 10px; background-color:rgba(0,0,0,0.3)">
+            Learn more:<br />
+            <a href="http://kirkkala.com/">kirkkala.com</a><br />
+            <a href="https://www.flickr.com/photos/kalak/">flickr.com/kalak</a>
+          </p>
+        </section>
+      </div>
+
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.min.js"></script>
+
+    <script>
+
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+        // Parallax scrolling
+        // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+        // parallaxBackgroundSize: '2100px 900px',
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+        ]
+      });
+
+    </script>
+
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-2711157-1']);
+      _gaq.push(['_setDomainName', 'kirkkala.com']);
+      _gaq.push(['_setAllowLinker', true]);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+
+  </body>
+</html>
