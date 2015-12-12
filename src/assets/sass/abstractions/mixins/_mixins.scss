@@ -92,6 +92,7 @@
  My custom awesomeness
  */
 
+// Font-awesome icons!
 @mixin icon($icon, $size: 40px) {
   @include font-size($size);
     &:after {
