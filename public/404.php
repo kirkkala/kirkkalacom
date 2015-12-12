@@ -5,14 +5,14 @@
 <!--[if gt IE 8]><!--> <html lang="en-us" class="no-js"> <!--<![endif]-->
 <head>
 	<meta charset="utf-8">
-	
+
 	<title>404 - page not found | kirkkala.com</title>
-	
+
 	<!-- Mobile viewport optimized: j.mp/bplateviewport -->
 	<meta name="viewport" content="width=device-width,initial-scale=1">
-	
-	<link rel="stylesheet" href="/assets/css/style.css" type="text/css" charset="utf-8"> 
-	
+
+	<link rel="stylesheet" href="/assets/css/style.min.css" type="text/css" charset="utf-8">
+
 	<!-- All .js at the bottom, except for Modernizr / Respond. -->
 	<script src="/assets/js/libs/modernizr-2.0.6.min.js"></script>
 </head>
@@ -29,6 +29,6 @@
 
 <script defer src="/assets/js/plugins.js"></script>
 <script defer src="/assets/js/script.js"></script>
-  
+
 </body>
 </html>
