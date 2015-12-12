@@ -43,7 +43,7 @@
 			<div id="info-shadow">
 				<h1>I am Timo</h1>
 				<p style="margin-bottom: 0;">I am a web developer at <a href="http://www.mirumagency.com/helsinki">Mirum Helsinki</a>.<br />On my freetime I like to take pictures, especially with old cameras.</p>
-				<p>For more photos visit my <a href="http://www.flickr.com/photos/kalak">Flickr photostream</a>.</small></p>
+				<p>For more photos visit my <a href="http://www.flickr.com/photos/kalak">Flickr photostream</a>.</p>
 				<h2>Contact me?</h2>
 				<p><a href="mailto:timo.kirkkala@gmail.com">timo.kirkkala@gmail.com</a></p>
 				<h2>Me in social media:</h2>
