@@ -213,7 +213,7 @@ AddType text/x-vcard                   vcf
 #   "access plus 1 week" or so.
 
 <IfModule mod_expires.c>
-  ExpiresActive off
+  ExpiresActive on
 
 # Perhaps better to whitelist expires rules? Perhaps.
   ExpiresDefault                          "access plus 1 month"
