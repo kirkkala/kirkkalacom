@@ -1,0 +1,7 @@
+@media only screen and (min-width: 768px) {
+  /* Style adjustments for viewports 768px and over go here */
+  #supersized-container #progress-back,
+  #supersized-container #controls-wrapper {
+    display: block !important;
+  }
+}
