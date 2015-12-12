@@ -33,10 +33,10 @@
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
   js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1";
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=537276356359621";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-<div class="fb-like load-item" data-href="http://kirkkala.com" data-send="false" data-layout="button_count" data-width="50" data-show-faces="false" data-colorscheme="dark" data-font="verdana"></div>
+<div class="fb-like" data-href="http://kirkkala.com" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
 	<div id="container">
 		<div id="open-info" class="open" title="Click to open info">i</div>
 		<div id="info-container">
