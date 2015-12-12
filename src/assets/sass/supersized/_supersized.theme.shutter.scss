@@ -11,6 +11,13 @@
 
 */
 
+// Set few vars
+$_super_black: #0d0d0d;
+$_super_black_2: #0f0f0f;
+$_super_dark_grey: #262626;
+$_super_dark_grey_2: #292929;
+
+
 #controls-wrapper {
   margin: 0 auto;
   height: 42px;
@@ -18,33 +25,33 @@
   bottom: 0px;
   left: 0;
   z-index: 4;
-  background: url(../supersized/img/nav-bg.png) repeat-x;
+  @include linear-gradient($_super_dark_grey, $_super_black);
   position: fixed;
-}
 
-#controls {
-  overflow: hidden;
-  height: 100%;
-  position: relative;
-  text-align: left;
-  z-index: 5;
-}
+  #controls {
+	  overflow: hidden;
+	  height: 100%;
+	  position: relative;
+	  text-align: left;
+	  z-index: 5;
 
-#slidecounter {
-  float: left;
-  color: #999;
-  text-shadow: #000 0 -1px 0;
-  margin: 0px 10px 0 15px;
-  line-height: 42px;
-}
+	  #slidecounter {
+		  float: left;
+		  color: #999;
+		  text-shadow: #000 0 -1px 0;
+		  margin: 0px 10px 0 15px;
+		  line-height: 42px;
+		}
 
-#slidecaption {
-  overflow: hidden;
-  float: left;
-  color: #FFF;
-  text-shadow: #000 1px 1px 2px;
-  margin: 0 20px 0 0;
-  line-height: 42px;
+		#slidecaption {
+		  overflow: hidden;
+		  float: left;
+		  color: #FFF;
+		  text-shadow: #000 1px 1px 2px;
+		  margin: 0 20px 0 0;
+		  line-height: 42px;
+		}
+	}
 }
 
 #navigation {
@@ -56,9 +63,8 @@
   float: left;
   margin-top: 1px;
   border-right: 1px solid #333;
-  background: url('../supersized/img/bg-hover.png') repeat-x 0 44px;
   &:hover {
-    background-position: 0 1px;
+  	@include linear-gradient($_super_dark_grey_2, $_super_black_2);
     cursor: pointer;
   }
 }
@@ -106,7 +112,6 @@ ul#slide-list {
     }
     a {
       display: block;
-      //background: url('../supersized/img/nav-dot.png') no-repeat 0 -24px;
       @include icon('\f111', 11px);
       color: #dadada;
       @include opacity(0.6);
@@ -122,9 +127,8 @@ ul#slide-list {
   float: right;
   margin-top: 1px;
   border-left: 1px solid #333;
-  background: url('../supersized/img/bg-hover.png') repeat-x 0 44px;
   &:hover {
-    background-position: 0 1px;
+  	@include linear-gradient($_super_dark_grey_2, $_super_black_2);
     cursor: pointer;
   }
 }
@@ -194,7 +198,7 @@ ul#slide-list {
   z-index: 3;
   bottom: 0;
   left: 0;
-  background: url(../supersized/img/bg-black.png);
+  background-color: transparentize($_super_black, .3);
   height: 150px;
   width: 100%;
   overflow: hidden;
@@ -207,32 +211,26 @@ ul#slide-list {
 #thumb-back, #thumb-forward {
   position: absolute;
   z-index: 5;
-  bottom: 42px;
-  height: 102px;
-  width: 40px;
+  bottom: 61px;
+  color: #dadada;
+  @include opacity(.5);
+  &:hover {
+  	@include opacity(1);
+  }
 }
 
 #thumb-back {
-  left: 0;
-  background: url('../supersized/img/thumb-back.png') no-repeat center center;
+  left: 5px;
+  @include icon('\f137');
 }
 
 #thumb-forward {
-  right: 0;
-  background: url('../supersized/img/thumb-forward.png') no-repeat center center;
+  right: 5px;
+  @include icon('\f138');
 }
 
 #thumb-back:hover, #thumb-forward:hover {
   cursor: pointer;
-  background-color: rgba(256, 256, 256, 0.1);
-}
-
-#thumb-back:hover {
-  border-right: 1px solid rgba(256, 256, 256, 0.2);
-}
-
-#thumb-forward:hover {
-  border-left: 1px solid rgba(256, 256, 256, 0.2);
 }
 
 ul#thumb-list {
@@ -253,7 +251,7 @@ ul#thumb-list {
     img {
       width: 150px;
       height: auto;
-      @include opacity(0.5);
+      @include opacity(0.6);
     }
     &.current-thumb img {
       @include opacity(1);
