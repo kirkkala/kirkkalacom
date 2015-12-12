@@ -24,6 +24,18 @@ $(document).ready(function() {
 		$(element).hide().delay(delay).fadeIn(100).fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100);
 	}
 
+
+	// Add attributes for the thumbnail images
+	setTimeout(function(){
+
+	var elem = $('#thumb-list li img'),
+			elemHeight = elem.height(),
+			elemWidth = elem.width();
+
+	  $('#thumb-list li img').attr('width', 150);
+		$('#thumb-list li img').attr('height', 150);
+	}, 500);
+
 });
 
 
