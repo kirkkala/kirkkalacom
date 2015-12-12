@@ -52,7 +52,7 @@
 					<a href="http://fi.linkedin.com/in/timokirkkala" class="linkedin" title="LinkedIn">fi.linkedin.com/in/timokirkkala</a>
 				</p>
 				<div id="closing-tip">Close to see my photos</div>
-				<div id="close-intro" class="close" title="Click to close">Close</div>
+				<div id="close-intro" class="close" title="Click to close"></div>
 			</div> <!-- / #inro-shadow -->
 		</div> <!-- /#info-container -->
 

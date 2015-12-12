@@ -122,7 +122,6 @@ p, #info-container ul {
 #info-container #closing-tip,
 #info-container #close-intro {
   position: absolute;
-  text-indent: -9999px;
 }
 
 #info-container #closing-tip {
@@ -133,17 +132,17 @@ p, #info-container ul {
   width: 82px;
   height: 45px;
   background: transparent url(../img/sprite.png) no-repeat  0 -113px;
+  text-indent: -9999px;
 }
 
 #info-container #close-intro {
-  background: transparent url(../img/sprite.png) no-repeat -55px -67px;
   top: 15px;
   right: 15px;
   width: 43px;
   height: 43px;
-  filter: alpha(opacity=60);
-  opacity: 0.6;
-  -moz-opacity: 0.6;
+  @include opacity(0.8);
+  @include icon('\f057');
+  color: #dadada;
 }
 
 #container #open-info {
@@ -151,17 +150,13 @@ p, #info-container ul {
 }
 
 #container #open-info {
-  @include font-size(40px);
-  &:after {
-    @include fa-icon();
-    content: "\f059";
-  }
   position: absolute;
-  color: #fff;
   top: 10px;
-  right: 10px;
+  right: 20px;
   cursor: pointer;
-  @include opacity(0.6);
+  @include opacity(0.8);
+  @include icon('\f059');
+  color: #dadada;
 }
 
 #container #open-info:hover,
