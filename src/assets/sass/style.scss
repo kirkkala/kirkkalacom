@@ -1,3 +1,4 @@
+@import "fontawesome/font-awesome";
 @import "abstractions/*";
 @import "h5bp/*";
 @import "components/*";
@@ -150,17 +151,17 @@ p, #info-container ul {
 }
 
 #container #open-info {
+  @include font-size(40px);
+  &:after {
+    @include fa-icon();
+    content: "\f059";
+  }
   position: absolute;
-  background: transparent url(../img/sprite.png) no-repeat -2px -67px;
-  text-indent: -9999px;
+  color: #fff;
   top: 10px;
   right: 10px;
   cursor: pointer;
-  width: 43px;
-  height: 43px;
-  filter: alpha(opacity=60);
-  opacity: 0.6;
-  -moz-opacity: 0.6;
+  @include opacity(0.6);
 }
 
 #container #open-info:hover,
