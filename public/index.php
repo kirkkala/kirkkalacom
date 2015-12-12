@@ -35,7 +35,7 @@
 }(document, 'script', 'facebook-jssdk'));</script>
 <div class="fb-like" data-href="http://kirkkala.com" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
 	<div id="container">
-		<div id="open-info" class="open" title="Click to open info">i</div>
+		<div id="open-info" class="open" title="Click to open info"></div>
 		<div id="info-container">
 			<div id="info-shadow">
 				<h1>I am Timo</h1>
