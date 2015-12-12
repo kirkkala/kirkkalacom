@@ -86,3 +86,16 @@
   $opacity-ie: $opacity * 100;
   filter: alpha(opacity=$opacity-ie); //IE8
 }
+
+
+/*
+ My custom awesomeness
+ */
+
+@mixin icon($icon, $size: 40px) {
+  @include font-size($size);
+    &:after {
+      @include fa-icon();
+      content: $icon;
+    }
+}
