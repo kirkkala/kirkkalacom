@@ -27,8 +27,7 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="/assets/js/libs/jquery-1.6.2.min.js"><\/script>')</script>
 
-<script defer src="/assets/js/plugins.js"></script>
-<script defer src="/assets/js/script.js"></script>
+<script defer src="/assets/js/script.min.js"></script>
 
 </body>
 </html>

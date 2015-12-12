@@ -90,8 +90,7 @@
 
 <script type="text/javascript" src="assets/js/supersized.gallery.js"></script>
 
-<script defer src="assets/js/plugins.js"></script>
-<script defer src="assets/js/script.js"></script>
+<script defer src="assets/js/script.min.js"></script>
 
 <?php include_once('assets/analytics.php'); ?>
 
