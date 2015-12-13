@@ -10,12 +10,14 @@
       position: relative;
       max-width: 800px;
       margin: 0 auto;
-      padding: 75px 0;
+      padding: 75px 15px;
+      z-index: 999;
     }
 
     #closing-tip,
     #close-intro {
       position: absolute;
+      z-index: 1000;
     }
     #closing-tip {
       display: none;
@@ -63,27 +65,7 @@
       @include opacity(1);
     }
   }
-
-
-
 }
-
-.no-js .js-disabled {
-  display: inline;
-}
-
-.js-disabled {
-  display: none;
-}
-
-.close, .open {
-  cursor: pointer;
-}
-
-.no-js .close, .no-js .open {
-  display: none;
-}
-
 
 #info-toggler {
   font-size: 14px;
