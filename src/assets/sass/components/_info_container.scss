@@ -1,0 +1,97 @@
+
+#container {
+
+  #info-container {
+    display: none;
+    position: relative;
+    color: #dadada;
+
+    #info-shadow { // this is the actual content
+      position: relative;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 75px 0;
+    }
+
+    #closing-tip,
+    #close-intro {
+      position: absolute;
+    }
+    #closing-tip {
+      display: none;
+      visibility: hidden; /* hide on mobiles */
+      top: 65px;
+      right: 45px;
+      width: 82px;
+      height: 45px;
+      background: transparent url(../img/sprite.png) no-repeat  0 -113px;
+      text-indent: -9999px;
+    }
+    #close-intro {
+      top: 10px;
+      right: 10px;
+      width: 43px;
+      height: 43px;
+      @include opacity(0.8);
+      @include icon('\f057');
+      color: #dadada;
+      &:hover,
+      &:active {
+        @include opacity(1);
+      }
+    }
+
+    #closing-tip {
+      visibility: visible;
+    }
+  }
+
+  #open-info {
+    display: none;
+  }
+
+  #open-info {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    @include opacity(0.8);
+    @include icon('\f059');
+    color: #dadada;
+    &:hover,
+    &:active {
+      @include opacity(1);
+    }
+  }
+
+
+
+}
+
+.no-js .js-disabled {
+  display: inline;
+}
+
+.js-disabled {
+  display: none;
+}
+
+.close, .open {
+  cursor: pointer;
+}
+
+.no-js .close, .no-js .open {
+  display: none;
+}
+
+
+#info-toggler {
+  font-size: 14px;
+  color:  #bbb;
+}
+
+#info-toggler,
+footer,
+#controls-wrapper {
+  font-family: 'ArchitectsDaughterRegular', Arial, sans-serif;
+}
