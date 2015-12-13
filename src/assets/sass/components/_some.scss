@@ -1,34 +1,35 @@
 .some {
   margin-bottom: 75px;
   a {
-    text-indent: -9999px;
     display: block;
-    float: left;
-    width: 53px;
-    height: 57px;
-    margin: 0;
-    background: url(../img/sprite.png) no-repeat;
+    margin: 5px 10px 0 0;
+    i {
+      color: #fff;
+      @include font-size(40px);
+      @include opacity(0.8);
+    }
+    &:hover {
+      i {
+        @include opacity(1);
+      }
+    }
+    .label {
+      @include font-size(20px);
+      padding-left: 10px;
+    }
+  }
+}
+
+#fb-widget {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  z-index: 1000;
+
+  .fb-like {
     @include opacity(0.5);
     &:hover {
       @include opacity(1);
     }
-    &.flickr    { background-position: 0 0; }
-    &.facebook  { background-position: -59px 0; }
-    &.twitter   { background-position: -117px 0; }
-    &.linkedin  { background-position: -175px 0; }
-    &.instagram { background-position: -233px 0; }
-  }
-}
-
-.fb-like {
-  position: relative;
-  top: 15px;
-  left: 15px;
-  float: left;
-  z-index: 1000;
-
-  @include opacity(0.5);
-  &:hover {
-    @include opacity(1);
   }
 }

@@ -47,6 +47,23 @@ body {
   background: url(../img/bg_tiled.png) top left repeat;
 }
 
+.no-js .js-disabled {
+  display: inline;
+}
+
+.js-disabled {
+  display: none;
+}
+
+.close, .open {
+  cursor: pointer;
+}
+
+.no-js .close, .no-js .open {
+  display: none;
+}
+
+
 h1 {
   font: 4em/1.2em 'StMarieThin', Arial, sans-serif;
   margin: 0 0 0.8em 0;

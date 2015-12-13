@@ -25,15 +25,17 @@
 </head>
 
 <body>
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=537276356359621";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-<div class="fb-like" data-href="http://kirkkala.com" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+<div id="fb-widget">
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=537276356359621";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+	<div class="fb-like" data-href="http://kirkkala.com" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+</div>
 	<div id="container">
 		<div id="open-info" class="open" title="Click to open info"></div>
 		<div id="info-container">
@@ -45,11 +47,11 @@
 				<p><a href="mailto:timo.kirkkala@gmail.com">timo.kirkkala@gmail.com</a></p>
 				<h2>Me in social media:</h2>
 				<p class="some">
-					<a href="http://www.flickr.com/people/kalak" class="flickr" title="Flickr">flickr.com/photos/kalak</a>
-					<a href="http://instagram.com/kirkkala" class="instagram" title="Instagram">instagram.com/kirkkala</a>
-					<a href="http://www.facebook.com/timo.kirkkala" class="facebook" title="Facebook">facebook.com/timo.kirkkala</a>
-					<a href="http://www.twitter.com/kirkkala" class="twitter" title="Twitter">twitter.com/kirkkala</a>
-					<a href="http://fi.linkedin.com/in/timokirkkala" class="linkedin" title="LinkedIn">fi.linkedin.com/in/timokirkkala</a>
+					<a href="http://www.flickr.com/people/kalak" class="flickr" title="Flickr"><i class="fa fa-flickr"></i><span class="label">flickr.com/photos/kalak</span></a>
+					<a href="http://instagram.com/kirkkala" class="instagram" title="Instagram"><i class="fa fa-instagram"></i><span class="label">instagram.com/kirkkala</span></a>
+					<a href="http://www.facebook.com/timo.kirkkala" class="facebook" title="Facebook"><i class="fa fa-facebook-square"></i><span class="label">facebook.com/timo.kirkkala</span></a>
+					<a href="http://www.twitter.com/kirkkala" class="twitter" title="Twitter"><i class="fa fa-twitter-square"></i><span class="label">twitter.com/kirkkala</span></a>
+					<a href="http://fi.linkedin.com/in/timokirkkala" class="linkedin" title="LinkedIn"><i class="fa fa-linkedin-square"></i><span class="label">fi.linkedin.com/in/timokirkkala</span></a>
 				</p>
 			</div> <!-- / #inro-shadow -->
 			<div id="closing-tip">Close to see my photos</div>
