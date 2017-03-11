@@ -8,12 +8,13 @@
 
   <title>Timo Kirkkala | Curriculum Vitae | kirkkala.com</title>
 
-  <link rel="stylesheet" href="http://kirkkala.com/assets/css/style.css" type="text/css" charset="utf-8">
+  <link rel="stylesheet" href="http://kirkkala.com/assets/css/style.min.css" type="text/css" charset="utf-8">
 
   <style type="text/css">
   div#container {
     background: #fff;
     width: 400px;
+    margin: 40px auto;
     padding: 40px 60px;
     border: 1px solid #dedede;
     -webkit-border-radius: 20px;
@@ -27,7 +28,7 @@
 <body>
   <div id="container">
     <h1>Hi, I am Timo</h1>
-    <p>I wish I had time to write my CV here.</p>
+    <p>If I was looking for a job I would write my CV here.</p>
     <p style="margin-bottom:0;"><small>Meanwhile, look elsewhere:</small></p>
     <ul>
       <li><a href="http://fi.linkedin.com/in/timokirkkala" class="linkedin" title="LinkedIn">http://fi.linkedin.com/in/timokirkkala</a></li>
