@@ -1,4 +1,11 @@
-{
+{ "name": "kirkkala-gulp",
+  "description": "Gulp task dependencies for kirkkala",
+  "version": "1.0.0",
+  "repository": {
+    "type" : "git",
+    "url" : "git@bitbucket.org:kirkkala/kirkkalacom.git"
+  },
+  "license" : "(GPL-3.0)",
   "devDependencies": {
     "event-stream": "^3.3.4",
     "gulp-autoprefixer": "^3.1.1",
