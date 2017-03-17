@@ -8,7 +8,7 @@
 
   <title>Timo Kirkkala | Curriculum Vitae | kirkkala.com</title>
 
-  <link rel="stylesheet" href="http://kirkkala.com/assets/css/style.min.css" type="text/css" charset="utf-8">
+  <link rel="stylesheet" href="//kirkkala.com/assets/css/style.min.css" type="text/css" charset="utf-8">
 
   <style type="text/css">
   div#container {
@@ -21,6 +21,7 @@
     border-radius: 20px;
     -webkit-box-shadow: 10px 10px 50px 1px rgba(0, 0, 0, 0.5);
     box-shadow: 10px 10px 50px 1px rgba(0, 0, 0, 0.5);
+    text-shadow: none;
   }
   </style>
 </head>
