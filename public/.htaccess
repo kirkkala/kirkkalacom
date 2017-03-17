@@ -348,6 +348,9 @@ FileETag None
 	RewriteCond %{HTTP_HOST} ^(www.)?kalak.org$
 	RewriteRule ^(.*)$ http://kirkkala.com/$1 [R=301,NC,L]
 
+RewriteCond %{HTTPS} off
+RewriteRule (.*) https://%{SERVER_NAME}/$1 [R,L]
+
   ## Restructured directories
   RewriteRule ^haat/(.*) /kuvat/haat/$1 [R=301,NC,L]
   RewriteRule ^kuvat/annatomas /kuvat/haat/annatomas/ [R=301,NC,L]
