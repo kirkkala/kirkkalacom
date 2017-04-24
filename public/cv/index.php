@@ -12,16 +12,16 @@
 
   <style type="text/css">
   div#container {
-    background: #fff;
+    background: rgba(10, 10, 10, 0.9);
+    color: #fefefe;
     width: 400px;
     margin: 40px auto;
     padding: 40px 60px;
-    border: 1px solid #dedede;
+    border: 1px solid #111;
     -webkit-border-radius: 20px;
     border-radius: 20px;
     -webkit-box-shadow: 10px 10px 50px 1px rgba(0, 0, 0, 0.5);
     box-shadow: 10px 10px 50px 1px rgba(0, 0, 0, 0.5);
-    text-shadow: none;
   }
   </style>
 </head>

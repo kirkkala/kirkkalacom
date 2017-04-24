@@ -41,17 +41,19 @@
 		<div id="info-container">
 			<div id="info-shadow">
 				<h1>I am Timo</h1>
-				<p style="margin-bottom: 0;">I am a web developer at <a href="http://www.mirumagency.com/helsinki">Mirum Helsinki</a>.<br />On my freetime I like to take pictures, especially with old cameras.</p>
+				<p>I am a Drupal developer at <a href="http://wunder.io">Wunder</a>.<br />On my freetime I like to take pictures, especially with old cameras.</p>
 				<p>For more photos visit my <a href="http://www.flickr.com/photos/kalak">Flickr photostream</a>.</p>
 				<h2>Contact me?</h2>
 				<p><a href="mailto:timo.kirkkala@gmail.com">timo.kirkkala@gmail.com</a></p>
-				<h2>Me in social media:</h2>
+				<h2>Me elsewhere:</h2>
 				<p class="some">
 					<a href="http://www.flickr.com/people/kalak" class="flickr" title="Flickr"><i class="fa fa-flickr"></i><span class="label">flickr.com/photos/kalak</span></a>
 					<a href="http://instagram.com/kirkkala" class="instagram" title="Instagram"><i class="fa fa-instagram"></i><span class="label">instagram.com/kirkkala</span></a>
 					<a href="http://www.facebook.com/timo.kirkkala" class="facebook" title="Facebook"><i class="fa fa-facebook-square"></i><span class="label">facebook.com/timo.kirkkala</span></a>
 					<a href="http://www.twitter.com/kirkkala" class="twitter" title="Twitter"><i class="fa fa-twitter-square"></i><span class="label">twitter.com/kirkkala</span></a>
 					<a href="http://fi.linkedin.com/in/timokirkkala" class="linkedin" title="LinkedIn"><i class="fa fa-linkedin-square"></i><span class="label">fi.linkedin.com/in/timokirkkala</span></a>
+					<a href="https://github.com/kirkkala" class="github" title="Github"><i class="fa fa-github-square"></i><span class="label">github.com/kirkkala</span></a>
+					<a href="https://drupal.org/u/kirkkala" class="drupal" title="Drupal.org"><i class="fa fa-drupal"></i><span class="label">drupal.org/u/kirkkala</span></a>
 				</p>
 			</div> <!-- / #inro-shadow -->
 			<div id="closing-tip">Close to see my photos</div>
