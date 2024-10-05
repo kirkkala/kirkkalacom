@@ -321,49 +321,8 @@ FileETag None
 
 <IfModule mod_rewrite.c>
   Options +FollowSymlinks
-	RewriteEngine On
-
-	## rewrite for the altitude dev
-	RewriteCond %{HTTP_HOST} ^dev\.altitude\.kirkkala\.com$
-	# Check to see if the rewrite already happened (prevent infinite loop of internal rewrites)
-	RewriteCond %{REQUEST_URI} !^/dev(/.*|$)
-	RewriteRule ^(.*) /dev/altitude/$1 [L]
-
-  ## rewrite for timo.kirkkala.com
-  RewriteCond %{HTTP_HOST} ^timo\.kirkkala\.com$
-  # Check to see if the rewrite already happened (prevent infinite loop of internal rewrites)
-  RewriteCond %{REQUEST_URI} !^/cv(/.*|$)
-  RewriteRule ^(.*) /cv/$1 [L]
-
-  # Remove any subdomain (including www) that does not match
-	RewriteCond %{HTTP_HOST} ^(.*).kirkkala.com$ [NC] [OR]
-  RewriteCond %{HTTP_HOST} !^timo\.kirkkala.com$ [NC]
-	RewriteRule ^(.*)$ http://kirkkala.com/$1 [R=301,NC,L]
-
-	## Rewrite kalak.org frontpage to archive
-	RewriteCond %{HTTP_HOST} ^(www.)?kalak.org$
-	RewriteRule ^(/)?$ http://kirkkala.com/archive/2011 [R=301,NC,L]
-
-	## Rewrite rest of kalak.org -> kirkkala.com
-	RewriteCond %{HTTP_HOST} ^(www.)?kalak.org$
-	RewriteRule ^(.*)$ http://kirkkala.com/$1 [R=301,NC,L]
-
-  RewriteCond %{HTTPS} off
-  RewriteRule (.*) https://%{SERVER_NAME}/$1 [R,L]
-
-  ## Restructured directories
-  RewriteRule ^haat/(.*) /kuvat/haat/$1 [R=301,NC,L]
-  RewriteRule ^kuvat/annatomas /kuvat/haat/annatomas/ [R=301,NC,L]
-  RewriteRule ^kuvat/activeark/curl /kuvat/activeark/otters/2010-teamday [R=301,NC,L]
-
-
-  # Any additional special rewrites
-	RewriteRule ^kuvat/murmansk-tavastialla-31-7-2009(.*) /kuvat/murmansk/tavastia2009 [R=301,NC,L]
-	RewriteRule ^juttuja/snarakoski(.*) /kuvat/vimpeli/2009$1 [R=301,NC,L]
-	RewriteRule ^koli2011/docs$ https://spreadsheets.google.com/ccc?key=0AsZvFsBzLnrJdHdXNUdIWjhHN3FONDhVTjdrakQwZlE&hl=en&authkey=CJ7WhrIK [R=301,NC,L]
+  RewriteEngine On
 </IfModule>
-
-
 
 # ----------------------------------------------------------------------
 # Suppress or force the "www." at the beginning of URLs
