@@ -20,7 +20,7 @@ concurrency:
   group: "pages"
   cancel-in-progress: false
 
-jobs
+jobs:
   deploy:
     environment:
       name: github-pages
