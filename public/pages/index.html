@@ -5,24 +5,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Timo says Hello World!</title>
     <style>
-        body, html {
-            height: 100%;
+        body {
             margin: 0;
-            font-family: 'Comic Sans MS', 'Cursive', sans-serif;
+            padding: 0;
+            height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
-            background-color: #f0f0f0;
+            background: linear-gradient(145deg,
+                            #000000,  /* Black */
+                            #1a1a1a,  /* Very Dark Grey */
+                            #232341,  /* Very Dark Blue-ish */
+                            #29004d,  /* Very Dark Lilac */
+                            #000000); /* Black */
+            background-size: cover;
+            overflow: hidden;
+            position: relative;
         }
+
+        .star {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background-color: white;
+            border-radius: 50%;
+            box-shadow: 0 0 6px rgba(255, 255, 255, 0.8);
+        }
+
+        .star.one {
+            animation: twinkle 1s infinite alternate;
+        }
+
+        .star.two {
+            animation: twinkle 2s infinite alternate;
+        }
+
+        .star.three {
+            animation: twinkle 3s infinite alternate;
+        }
+
+        .star.four {
+            animation: twinkle 4s infinite alternate;
+        }
+
+        @keyframes twinkle {
+            from { opacity: 1; }
+            to { opacity: 0.2; }
+        }
+
         h1 {
+            color: #fff;
             font-size: 8vw;
-            text-align: center;
-            margin: 0;
-            color: #333;
+            text-shadow:
+                    0 0 10px rgba(255, 255, 255, 0.8),
+                    0 0 15px rgba(255, 255, 255, 0.6),
+                    0 0 20px rgba(173, 216, 230, 0.6),
+                    0 0 30px rgba(173, 216, 230, 0.5);
+            font-family: 'Comic Sans MS', sans-serif;
+            z-index: 1;
+            position: relative;
+            opacity: .25;
         }
     </style>
 </head>
 <body>
-<h1>hello world</h1>
+<h1>Hello World!</h1>
+<script>
+    function twinkleTwinkleLittleStars() {
+        const numStars = 369;
+        const body = document.body;
+        const classes = ['one', 'two', 'three', 'four'];
+
+        for (let i = 0; i < numStars; i++) {
+            const star = document.createElement('div');
+            star.className = 'star';
+            star.style.top = Math.random() * 100 + 'vh';
+            star.style.left = Math.random() * 100 + 'vw';
+
+            // Select a random class from the array
+            const randomClass = classes[Math.floor(Math.random() * classes.length)];
+            star.classList.add(randomClass);
+
+            body.appendChild(star);
+        }
+    }
+
+    twinkleTwinkleLittleStars();
+</script>
 </body>
 </html>
